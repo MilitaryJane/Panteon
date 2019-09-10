@@ -1,0 +1,93 @@
+@import "_style-lib.scss";
+
+.logo {
+  width: 145px;
+  height: 39px;
+  display: flex;
+  justify-content: space-between;
+
+  &__image {
+    width: 39px;
+    height: 39px;
+    color: #E12457;
+  }
+
+  &__text-wrapper {
+    width: 96px;
+    padding-top: 6px;
+  }
+
+  &__name-text,
+  &__text {
+    display: inline-block;
+    width: 96px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__name-text {
+    font-size: 16.8px;
+    line-height: 13px;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: 12.6px;
+    line-height: 13px;
+    font-weight: 100;
+  }
+}
+
+
+@media (min-width: 765px) {
+  .logo {
+    width: 175px;
+    height: 48px;
+
+    &__image {
+      width: 48px;
+      height: 48px;
+    }
+
+    &__text-wrapper {
+      width: 115px;
+      padding-top: 8px;
+    }
+
+    &__name-text,
+    &__text {
+      width: 115px;
+    }
+
+    &__name-text {
+      font-size: 21px;
+      line-height: 16px;
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .logo {
+    width: 180px;
+
+    &__image {
+      width: 48px;
+      height: 48px;
+    }
+
+    &__text-wrapper {
+      padding-top: 6px;
+    }
+
+    &__name-text {
+      font-size: 21px;
+      line-height: 16px;
+    }
+
+    &__text {
+      font-size: 15.75px;
+      line-height: 21px;
+    }
+  }
+}
