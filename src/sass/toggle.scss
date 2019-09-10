@@ -1,0 +1,115 @@
+@import "_style-lib.scss";
+
+.toggle {
+  position: relative;
+  width: 54px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    @include pseudo-element;
+
+    left: 3px;
+    height: 2px;
+
+    background-color: $companion1-bg-color;
+  }
+
+  &::before {
+    top: 10px;
+    width: 29px;
+  }
+
+  &::after {
+    top: 27px;
+    width: 22px;
+  }
+
+  &__name {
+    display: none;
+  }
+
+  &__burger {
+    position: absolute;
+    top: 19px;
+    left: 3px;
+    width: 47px;
+    height: 2px;
+
+    background-color: $companion1-bg-color;
+  }
+}
+
+
+@media (min-width: 765px) {
+  .toggle {
+    width: 125px;
+
+    &::before,
+    &::after {
+      left: 75px;
+    }
+
+    &::before {
+      top: 7px;
+    }
+
+    &::after {
+      top: 23px;
+
+    }
+
+    &__name {
+      display: block;
+      padding: 0;
+      margin: 0;
+      margin-top: -15px;
+      margin-left: 3px;
+
+      text-align: left;
+
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+
+      color: $base-text-color;
+    }
+
+    &__burger {
+      top: 15px;
+      left: 75px;
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .toggle {
+
+    &::before,
+    &::after {
+      left: 76px;
+    }
+
+    &::before {
+      top: 5px;
+    }
+
+    &::after {
+      top: 21px;
+    }
+
+    &__name {
+      margin-top: -19px;
+    }
+
+    &__burger {
+      top: 13px;
+    }
+  }
+}
+
