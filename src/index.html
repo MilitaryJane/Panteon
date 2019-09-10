@@ -5,8 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panteon</title>
-    <link href="fonts/opensans-regular-webfont.woff2" rel="preload" as="font">
-    <link href="fonts/opensans-bold-webfont.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-thin.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-light.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-regular.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-bold.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-semibold.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-black.woff2" rel="preload" as="font">
     <link href="css/styles.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
 </head>
@@ -15,18 +19,23 @@
   <header class="page-header">
     <div class="container">
         <nav class = "main-nav main-nav--no-js">
-          <div class = "main-nav__wrapper"></div>
-            <a class="main-nav__logo logo">
-
-                <img class="logo__image" src="" width="39" height="39" alt="Логотип проекта Panteon">
-
+          <div class = "main-nav__wrapper">
+            <a class="main-nav__logo logo" aria-label="Логотип проекта Panteon">
+                <svg class="logo__image" width="39" height="39">
+                    <use xlink:href="img/sprite.svg#sprite-logo"></use>
+                </svg>
                 <span class = "logo__name-text">PANTEON</span>
                 <span class = "logo__text">progect</span>
             </a>
             <button class="main-nav__toggle toggle" type="button"><span class="toggle__burger "><span
-              class="visually-hidden">Открыть
-              меню</span></span></button>
+              class="visually-hidden">Открыть меню</span></span>
+            </button>
           </div>
+          <ul class="main-nav__list site-list">
+            <li class = "site-list__item" href = "#">О проекте</li>
+            <li class = "site-list__item" href = "#">Новости</li>
+            <li class = "site-list__item" href = "#">Критерии отбора</li>
+          </ul>
         </nav>
 
         <section class = "promo">
