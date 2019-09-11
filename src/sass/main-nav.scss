@@ -1,0 +1,47 @@
+@import "_style-lib.scss";
+
+.main-nav {
+  width: 290px;
+  padding-top: 20px;
+
+  &__wrapper {
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__promo {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 765px) {
+  .main-nav {
+    width: 719px;
+    padding-top: 25px;
+
+    &__wrapper {
+      width: 719px;
+    }
+
+    &__promo {
+      margin-top: 190px;
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .main-nav {
+    width: 1140px;
+    padding-top: 36px;
+
+    &__wrapper {
+      width: 1140px;
+
+    }
+    &__promo {
+      margin-top: 180px;
+    }
+  }
+}
