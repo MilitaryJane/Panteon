@@ -16,7 +16,7 @@
     left: 3px;
     height: 2px;
 
-    background-color: $companion1-bg-color;
+    background-color: $base-bg-color;
   }
 
   &::before {
@@ -40,8 +40,16 @@
     width: 47px;
     height: 2px;
 
-    background-color: $companion1-bg-color;
+    background-color: $base-bg-color;
   }
+}
+
+.toggle:focus .toggle__name,
+.toggle:hover .toggle__name {
+  color: $link-focus-color;
+}
+.toggle:active .toggle__name {
+  color: $link-active-color;
 }
 
 
@@ -76,7 +84,7 @@
       line-height: 24px;
       font-weight: 400;
 
-      color: $base-text-color;
+      color: $companion1-text-color;
     }
 
     &__burger {
