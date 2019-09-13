@@ -24,38 +24,60 @@
                 <svg class="logo__image" width="39" height="39">
                     <use xlink:href="img/sprite.svg#sprite-logo"></use>
                 </svg>
-                <span class = "logo__name-text">PANTEON</span>
-                <span class = "logo__text">progect</span>
+                <div class = "logo__text-wrapper">
+                  <span class = "logo__name-text">PANTEON<span class = "logo__text">progect</span></span>
+
+                </div>
             </a>
-            <button class="main-nav__toggle toggle" type="button"><span class="toggle__burger "><span
-              class="visually-hidden">Открыть меню</span></span>
+            <button class="main-nav__toggle toggle" type="button" aria-label="Меню" ><span
+              class="toggle__name">Меню</span><span class="toggle__burger"></span>
             </button>
           </div>
           <ul class="main-nav__list site-list">
-            <li class = "site-list__item" href = "#">О проекте</li>
-            <li class = "site-list__item" href = "#">Новости</li>
-            <li class = "site-list__item" href = "#">Критерии отбора</li>
+            <li class = "site-list__item">
+              <a class="site-list__item-link" href="#">О проекте</a>
+            </li>
+            <li class = "site-list__item">
+              <a class="site-list__item-link" href="#">Новости</a>
+            </li>
+            <li class = "site-list__item">
+              <a class="site-list__item-link" href="#">Критерии отбора</a>
+            </li>
           </ul>
         </nav>
 
-        <section class = "promo">
+        <section class = "main-nav__promo promo">
           <h1 class = "visually-hidden">O проекте Panteon</h1>
           <div class = "promo__caption">
             <span class = "promo__text1">Пункт назначения:</span>
-            <span class = "promo__text2">Пантеон</span>
+            <span class = "promo__text2">Пантеон,</span>
             <span class = "promo__text3">Марс</span>
           </div>
 
-          <div class = "promo__video promo-video">
-              <div class="promo-video__content-wrapper">
-                  <video class="promo-video__content" poster="" preload="none">
-                      <source src="#" type=''>
-                  </video>
-                  <button class="promo-video__play-button"><span class="promo-video__play-button-text">Смотреть видео</span></button>
-              </div>
+          <div class="promo__video promo-video">
+            <div class = "promo-video__image-wrapper">
+              <picture>
+                  <source type="image/webp" media="(min-width: 1600px)"
+                      srcset="img/video-1-desktop.webp, img/video-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 765px)"
+                      srcset="img/video-1-tablet.webp, img/video-1-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                      srcset="img/video-1-mobile.webp, img/video-1-mobile@2x.webp 2x">
+                  <source media="(min-width: 1600px)"
+                      srcset="img/video-1-desktop.png, img/video-1-desktop@2x.png 2x">
+                  <source media="(min-width: 765px)"
+                      srcset="img/video-1-tablet.png, img/video-1-tablet.png 2x">
+                  <img class="promo-video__image" src="img/video-1-mobile.png"
+                      srcset="img/video-1-mobile@2x.png 2x" alt="Космонавты">
+              </picture>
+              <button class="promo-video__play-button" aria-label="Воспроизвести"><span class="promo-video__play-button-text">Смотреть видео</span></button>
+            </div>
+            <div class="promo-video__video-content">
+              <iframe src="https://#;controls=1" width="214" height="139"></iframe>
+            </div>
           </div>
 
-          <div class = "promo__slogan">Первый город на планете Марс недалеко от горы Олимп</div>
+          <div class = "promo__slogan">Первый город на&nbsp;планете Марс недалеко от горы Олимп</div>
 
           <a class = "promo__link" href = "#"><span class = "visually-hidden">Узнать больше о проекте</span></a>
         </section>
@@ -378,4 +400,6 @@
             </div>
           </div>
       </footer>
+
+      <script src="js/main.min.js"></script>
 </body>
