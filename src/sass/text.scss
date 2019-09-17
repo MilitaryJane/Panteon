@@ -1,0 +1,64 @@
+@import "_style-lib.scss";
+
+.text {
+  width: 290px;
+  padding: 0;
+
+  font-size: 12.5px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $companion4-text-color;
+
+  &__paragraph {
+    padding: 0px;
+    margin: 0;
+    margin-bottom: 12px;
+
+    &--more-margin {
+      margin-bottom: 24px;
+    }
+  }
+
+  &--about-project {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 765px) {
+  .text {
+    width: 350px;
+
+    &__paragraph {
+      margin-bottom: 12px;
+
+      &--more-margin {
+        margin-bottom: 0px;
+      }
+    }
+
+    // &--about-project {
+    //   font-size: 14px;
+    // }
+  }
+
+}
+
+
+@media (min-width: 1600px) {
+  .text {
+    width: 463px;
+
+    &__paragraph {
+      margin-bottom: 12px;
+
+      &--more-margin {
+        margin-bottom: 0px;
+      }
+    }
+
+    // &--about-project {
+    //   font-size: 14px;
+    // }
+  }
+}
