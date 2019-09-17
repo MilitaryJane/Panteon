@@ -1,0 +1,29 @@
+@import "_style-lib.scss";
+
+.subtitle {
+  width: 290px;
+  padding: 0;
+
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $companion4-text-color;
+}
+
+
+@media (min-width: 765px) {
+  .subtitle {
+    width: 345px;
+
+    &--big {
+      width: 450px;
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .subtitle {
+    width: 400px;
+  }
+}
