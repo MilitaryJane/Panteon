@@ -1,0 +1,253 @@
+@import "_style-lib.scss";
+
+.illustration {
+  width: 320px;
+  height: 160px;
+
+  margin-left: -15px;
+  padding-right: 15px;
+  padding-top: 19px;
+  padding-bottom: 52px;
+
+  &__wrapper {
+    position: relative;
+
+    width: 320px;
+    height: 160px;
+
+    background-image: url("../img/illustration.svg");
+    background-position: 73% 94%;
+    background-repeat: no-repeat;
+    background-size: 1600px auto;
+
+
+    &::after {
+      @include pseudo-element;
+      top: 50px;
+      left: 146px;
+
+      width: 48px;
+      height: 48px;
+
+      transform: rotate(112deg);
+
+      background-image: url("../img/illustration-cosmoship.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__planet-name {
+    position: absolute;
+    display: block;
+    width: 40px;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $companion2-text-color;
+
+    &--Earth {
+      top: 37px;
+      left: 28px;
+    }
+
+    &--Mars{
+      top: -3px;
+      right: 50px;
+    }
+
+    &--Earth::after,
+    &--Mars::after {
+      @include pseudo-element;
+      box-sizing: border-box;
+
+      background-color: $base-bg-color;
+      border: 5px solid $companion4-bg-color;
+      border-radius: 50%;
+    }
+
+    &--Earth::after {
+      top: 34px;
+      left:-32px;
+
+      width: 78px;
+      height: 78px;
+    }
+
+    &--Mars::after {
+      top: -6px;
+      right: -58px;
+
+      width: 45px;
+      height: 45px;
+    }
+
+  }
+
+  &__text {
+    position: absolute;
+    display: block;
+    width: 80px;
+
+    top: 115px;
+
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 300;
+    color: $companion2-text-color;
+
+    &--distance {
+      left: 138px;
+    }
+
+    &--time {
+      right: -2px;
+    }
+  }
+
+  &__text sup {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+}
+
+
+@media (min-width: 765px) {
+  .illustration {
+    width: 765px;
+    height: 300px;
+
+    margin-left: -23px;
+    padding-right: 23px;
+    padding-top: 0px;
+    padding-bottom: 95px;
+
+    &__wrapper {
+      width: 765px;
+      height: 300px;
+
+      background-position: 75% 100%;
+      z-index: 1;
+
+      &::after {
+        top: 185px;
+        left: 430px;
+      }
+    }
+
+    &__planet-name {
+
+      &--Earth {
+        top: 263px;
+        left: 175px;
+      }
+
+      &--Mars{
+        top: 80px;
+        right: 45px;
+      }
+
+
+      &--Earth::after {
+        top: -63px;
+        left: -54px;
+
+        width: 147px;
+        height: 147px;
+
+        z-index: -1;
+      }
+
+      &--Mars::after {
+        top: -30px;
+        right: -20px;
+
+        width: 83px;
+        height: 83px;
+
+        z-index: -1;
+      }
+
+    }
+
+    &__text {
+      top: 245px;
+
+      &--distance {
+        left: 447px;
+      }
+
+      &--time {
+        right: 132px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .illustration {
+    width: 1600px;
+    height: 465px;
+
+    margin-left: -230px;
+    padding-right: 230px;
+
+    padding-bottom: 95px;
+
+    &__wrapper {
+      width: 1600px;
+      height: 465px;
+
+      &::after {
+        top: 350px;
+        left: 1053px;
+      }
+    }
+
+    &__planet-name {
+
+      &--Earth {
+        top: 425px;
+        left: 800px;
+      }
+
+      &--Mars{
+        top: 242px;
+        right: 252px;
+      }
+
+
+      &--Earth::after {
+        top: -63px;
+        left: -54px;
+
+        width: 147px;
+        height: 147px;
+      }
+
+      &--Mars::after {
+        top: -30px;
+        right: -20px;
+
+        width: 83px;
+        height: 83px;
+      }
+
+    }
+
+    &__text {
+      top: 410px;
+
+      &--distance {
+        left: 1075px;
+      }
+
+      &--time {
+        right: 340px;
+      }
+    }
+  }
+}
