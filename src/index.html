@@ -133,41 +133,59 @@
             </tr>
           </table>
       </section>
-      <section class = "about-Mars">
+      <section class = "page-main__about-Mars about-Mars">
         <h2 class = "about-Mars__title title">Марс. Вспомнить всё</h2>
-        <h3 class = "about-Mars__subtitle subtitle">Что такое Марс?</h3>
-        <div class = "about-Mars__text text">
-            <p>Планета Солнечной системы, названа в честь Марса — древнеримского бога войны.
-              Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
-            <p>Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
+        <div class = "about-Mars__column">
+          <h3 class = "about-Mars__subtitle subtitle">Что такое Марс?</h3>
+          <div class = "about-Mars__text about-Mars__text--1 text">
+              <p class = "text__paragraph">Планета Солнечной системы, названа в честь Марса — древнеримского бога войны.
+                Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
+              <p class = "text__paragraph">Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
+          </div>
         </div>
-        <h3 class = "about-Mars__subtitle subtitle">Где это? Как туда доехать?</h3>
-        <div class = "about-Mars__text text">
-            <p>Расстояние до Марса — почти 56 миллионов километров. </p>
-            <p>Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
+        <div class = "about-Mars__column">
+          <h3 class = "about-Mars__subtitle subtitle">Где это? Как туда доехать?</h3>
+          <div class = "about-Mars__text about-Mars__text--2 text">
+              <p class = "text__paragraph text__paragraph--more-margin">Расстояние до Марса — почти 56 миллионов километров. </p>
+              <p class = "text__paragraph">Чтобы преодалеть такое расстояние, нужно&nbsp;лететь на межпланетоном корабле 7-8 месяцев.</p>
+          </div>
         </div>
         <div class= "about-Mars__illustration illustration">
           <div class = "illustration__wrapper">
-
+            <span class = "illustration__planet-name illustration__planet-name--Earth">Earth</span>
+            <span class = "illustration__planet-name illustration__planet-name--Mars">Mars</span>
+            <span class = "illustration__text illustration__text--distance">56 <sup>mln km</sup></span>
+            <span class = "illustration__text illustration__text--time">7 <sup>mths</sup></span>
           </div>
         </div>
       </section>
       <section class = "about-project">
-          <h2 class = "about-project__title title">От идеи до реализации</h2>
-          <h3 class = "about-project__subtitle subtitle">Илон Маск. Гений или безумец?</h3>
-          <div class = "about-project__text text">
-            <p>Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер.
+          <h2 class = "about-project__title title">От идеи до&nbsp;реализации</h2>
+          <h3 class = "about-project__subtitle subtitle subtitle--big">Илон Маск. Гений&nbsp;или безумец?</h3>
+          <div class = "about-project__text text text--about-project">
+            <p class = "text__paragraph">Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер.
             Основатель компаний SpaceX и X.com, позже переименованной в PayPal.
             Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных:
             создать внеземную цивилизацию.</p>
           </div>
-          <img class ="about-project__photo" href = "" alt = "Фото Илона Маска">
+          <div class = "about-project__photo-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 765px)"
+                  srcset="img/content/photo-1-desktop.webp, img/content/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp"
+                  srcset="img/content/photo-1-mobile.webp, img/content/photo-1-mobile@2x.webp 2x">
+              <source media="(min-width: 765px)"
+                  srcset="img/content/photo-1-desktop.jpg, img/content/photo-1-desktop@2x.jpg 2x">
+              <img class="about-project__photo" src="img/content/photo-1-mobile.jpg"
+                  srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Фото Илона Маска">
+            </picture>
+          </div>
           <blockquote class = "about-project__quote">
             Мы должны сделать эту мечту реальностью за наше время
             жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность.
           </blockquote>
-          <div class = "about-project__text text">
-            </p>  — заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика).
+          <div class = "about-project__text text text--about-project">
+            <p class = "text__paragraph">  — заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика).
               Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».</p>
             </p> Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.</p>
           </div>
