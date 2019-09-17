@@ -1,0 +1,68 @@
+@import "_style-lib.scss";
+
+.about-project{
+  padding-top: 26px;
+  padding-bottom: 20px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 33px;
+
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  &__photo-wrapper {
+    position: relative;
+    &::before {
+      @include pseudo-element;
+      top: 0;
+      left: 75px;
+
+      box-sizing: border-box;
+      width: 165px;
+      height: 189px;
+
+      border: 10px solid $companion4-bg-color;
+    }
+  }
+
+  &__photo {
+    position: relative;
+    padding-left: 42px;
+    padding-top: 33px;
+
+    width: 165px;
+    height: 189px;
+  }
+
+  &__quote {
+    width: 290px;
+    padding: 0;
+    padding-top: 23px;
+    margin: 0;
+    margin-bottom: 38px;
+
+    color: $companion2-text-color;
+  }
+
+}
+
+
+@media (min-width: 765px) {
+
+}
+
+
+@media (min-width: 1600px) {
+
+}
+
