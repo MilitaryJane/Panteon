@@ -1,0 +1,31 @@
+@import "_style-lib.scss";
+
+.title {
+  width: 290px;
+  padding: 0;
+
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 700;
+  color: $companion2-text-color;
+}
+
+
+@media (min-width: 765px) {
+  .title {
+    width: 719px;
+
+    font-size: 42px;
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .title {
+    width: 925px;
+
+    font-size: 55px;
+    line-height: 55px;
+
+  }
+}
