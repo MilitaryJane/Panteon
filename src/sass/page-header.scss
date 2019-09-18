@@ -4,6 +4,7 @@
     width: 320px;
     min-height: 579px;
 
+
     background-color: $companion1-bg-color;
     color: $companion1-text-color;
 
@@ -23,7 +24,7 @@
 @media (min-width: 765px) {
   .page-header {
     width: 765px;
-    min-height: 941px;
+    min-height: 940px;
 
     background-image: url("../img/head-img-tablet.jpg");
     background-position: 0 0;
