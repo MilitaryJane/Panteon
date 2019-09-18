@@ -37,9 +37,13 @@
       }
     }
 
-    // &--about-project {
-    //   font-size: 14px;
-    // }
+    &--about-project {
+      width: 478px;
+    }
+
+    &--about-project-big {
+      width: 719px;
+    }
   }
 
 }
@@ -57,8 +61,13 @@
       }
     }
 
-    // &--about-project {
-    //   font-size: 14px;
-    // }
+    &--about-project {
+      width: 710px;
+    }
+
+    &--about-project-big {
+      width: 710px;
+    }
   }
+
 }
