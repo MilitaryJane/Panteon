@@ -25,5 +25,9 @@
 @media (min-width: 1600px) {
   .subtitle {
     width: 400px;
+
+    &--big {
+      width: 700px;
+    }
   }
 }

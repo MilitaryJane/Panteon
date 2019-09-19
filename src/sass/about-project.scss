@@ -2,7 +2,7 @@
 
 .about-project{
   padding-top: 26px;
-  padding-bottom: 20px;
+  padding-bottom: 7px;
 
   &__title {
     margin: 0;
@@ -12,7 +12,6 @@
   &__subtitle {
     margin: 0;
     margin-bottom: 33px;
-
   }
 
   &__text {
@@ -79,7 +78,7 @@
     position: relative;
     width: 719px;
     display: flex;
-    flex-direction: column;
+
     flex-wrap: wrap;
 
     &__title {
@@ -91,21 +90,20 @@
     }
 
     &__text {
-      margin-bottom: 0px;
-    }
+      margin-bottom: 68px;
+      align-self: flex-start;
 
-    &__photo-wrapper {
-      position: absolute;
-      top: 174px;
-      right: 32px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
 
     &__quote {
       width: 478px;
+      margin-top: -68px;
       margin-bottom: 25px;
 
     }
-
   }
 }
 
@@ -121,13 +119,20 @@
     }
 
     &__text {
-      margin-bottom: 0px;
+      margin-bottom: 260px;
+
+      &:last-child {
+        margin-top: -150px;
+        margin-bottom: 0px;
+      }
     }
 
     &__photo-wrapper {
-
+      margin-top: -53px;
 
       &::before {
+        left: 93px;
+
         width: 325px;
         height: 373px;
       }
@@ -142,7 +147,9 @@
 
 
     &__quote {
+      align-self: flex-start;
       width: 710px;
+      margin-top: -260px;
       margin-bottom: 37px;
 
       &::before {
