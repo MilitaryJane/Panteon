@@ -1,0 +1,242 @@
+@import "_style-lib.scss";
+
+.flight-cost {
+  position: relative;
+  padding-top: 0px;
+
+  &__photo {
+    width: 289px;
+    height: 289px;
+  }
+
+  &__wrapper {
+    width: 320px;
+    min-height: 650px;
+    margin-left: -15px;
+    margin-top: -144px;
+
+    background-color: $companion1-bg-color;
+    color: $companion1-text-color;
+
+    background-image: url("../img/substrate-1-mobile.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+        background-image: url("../img/substrate-1-mobile@2x.jpg");
+        background-size: 320px auto;
+    }
+  }
+
+  &__title {
+    width: 290px;
+
+    padding: 0;
+    padding-top: 182px;
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 25px;
+
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+
+  &__text {
+    width: 290px;
+
+
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 37px;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  &__slogan {
+    width: 218px;
+    margin-left: 15px;
+    margin-bottom: 47px;
+  }
+
+  &__price {
+    display: block;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 100;
+  }
+
+  &__slogan-text {
+    display: block;
+
+    padding: 0;
+    padding-bottom: 7px;
+    margin: 0;
+    margin-bottom: 8px;
+
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 100;
+
+
+    border-bottom: 1px solid $base-bg-color;
+  }
+
+  &__button {
+    margin-left: 15px;
+  }
+}
+
+
+
+@media (min-width: 765px) {
+  .flight-cost {
+    padding-top: 23px;
+
+    &__photo {
+      width: 253px;
+      height: 253px;
+      margin-left: 50px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 719px;
+      min-height: 376px;
+      margin-left: 0px;
+      margin-top: -207px;
+
+      background-image: url("../img/substrate-1-tablet.jpg");
+
+
+      @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+          background-image: url("../img/substrate-1-tablet@2x.jpg");
+          background-size: 719px auto;
+      }
+    }
+
+    &__title {
+      width: 306px;
+
+      padding-top: 48px;
+      margin-left: 383px;
+      margin-bottom: 25px;
+    }
+
+    &__text {
+      width: 306px;
+
+      margin-left: 383px;
+      margin-bottom: 50px;
+    }
+
+    &__slogan {
+      display: flex;
+      justify-content: space-between;
+
+      width: 437px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+      margin-right: 20px;
+    }
+
+    &__price {
+      width: 200px;
+
+      margin-bottom: 0;
+    }
+
+    &__slogan-text {
+      align-self: flex-start;
+      width: 220px;
+      margin-bottom: 0;
+
+    }
+
+    &__button {
+      margin-left: 0;
+    }
+
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .flight-cost {
+    padding-top: 35px;
+
+    &__photo {
+      width: 310px;
+      height: 310px;
+      margin-left: 27px;
+    }
+
+    &__wrapper {
+      width: 1140px;
+      min-height: 308px;
+      margin-top: -277px;
+
+      background-image: url("../img/substrate-1-desktop.jpg");
+
+
+      @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+          background-image: url("../img/substrate-1-desktop@2x.jpg");
+          background-size: 1140px auto;
+      }
+    }
+
+    &__title {
+      width: 610px;
+
+      padding-top: 55px;
+      margin-bottom: 5px;
+      margin-left: 400px;
+    }
+
+    &__text {
+      width: 610px;
+
+      margin-left: 400px;
+      margin-bottom: 10px;
+    }
+
+    &__slogan {
+      align-self: flex-start;
+      width: 450px;
+      padding-top: 0px;
+      margin-left: 400px;
+      margin-bottom: 30px;
+      margin-right: 30px;
+    }
+
+    &__price {
+      width: 200px;
+      align-self: flex-start;
+      margin-bottom: 0;
+    }
+
+    &__slogan-text {
+      align-self: center;
+      width: 220px;
+      margin-bottom: 0;
+
+    }
+
+    &__button {
+      margin-left: 0;
+    }
+  }
+
+}
