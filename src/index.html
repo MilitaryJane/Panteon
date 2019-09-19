@@ -171,13 +171,13 @@
           <div class = "about-project__photo-wrapper">
             <picture>
               <source type="image/webp" media="(min-width: 765px)"
-                  srcset="img/content/photo-1-desktop.webp, img/content/photo-1-desktop@2x.webp 2x">
+                srcset="img/content/photo-1-desktop.webp, img/content/photo-1-desktop@2x.webp 2x">
               <source type="image/webp"
-                  srcset="img/content/photo-1-mobile.webp, img/content/photo-1-mobile@2x.webp 2x">
+                srcset="img/content/photo-1-mobile.webp, img/content/photo-1-mobile@2x.webp 2x">
               <source media="(min-width: 765px)"
-                  srcset="img/content/photo-1-desktop.jpg, img/content/photo-1-desktop@2x.jpg 2x">
+                srcset="img/content/photo-1-desktop.jpg, img/content/photo-1-desktop@2x.jpg 2x">
               <img class="about-project__photo" src="img/content/photo-1-mobile.jpg"
-                  srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Фото Илона Маска">
+                srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Фото Илона Маска">
             </picture>
           </div>
           <blockquote class = "about-project__quote">
@@ -191,17 +191,33 @@
           </div>
       </section>
       <section class = "flight-cost">
-        <h2 class = "flight-cost__title">Стоимость перелета</h2>
-        <div class  = "flight-cost__text">
-          Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов.
-          Маск стремится сократить эту цифру в 20 000 раз, что составит 500 000 долларов на человека.
-        </div>
-        <div class = "flight-cost__slogan">
-          <span class = "flight-cost__price">$500 k</span>
-          <span class = "flight-cost__slogan-text">и ты на Марсе!</span>
-        </div>
+          <picture>
+              <source type="image/webp" media="(min-width: 1600px)"
+                srcset="img/content/photo-2-desktop.webp, img/content/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 765px)"
+                srcset="img/content/photo-2-tablet.webp, img/content/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/content/photo-2-mobile.webp, img/content/photo-2-mobile@2x.webp 2x">
+              <source media="(min-width: 1600px)"
+                srcset="img/content/photo-2-desktop.jpg, img/content/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 765px)"
+                srcset="img/content/photo-2-tablet.jpg, img/content/photo-2-tablet@2x.jpg 2x">
+              <img class="flight-cost__photo" src="img/content/photo-2-mobile.jpg"
+                srcset="img/content/photo-2-mobile@2x.jpg 2x" alt="Фото Илона Маска">
+            </picture>
+        <div class="flight-cost__wrapper">
+          <h2 class = "flight-cost__title">Стоимость перелета</h2>
+          <div class  = "flight-cost__text">
+            Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов.
+            Маск стремится сократить эту цифру в 20 000 раз, что составит <b>500 000 долларов</b> на человека.
+          </div>
+          <div class = "flight-cost__slogan">
+            <span class = "flight-cost__price">$500 k</span>
+            <span class = "flight-cost__slogan-text">и ты на Марсе!</span>
+          </div>
 
-        <button class = "flight-cost__button">Я готов лететь</button>
+          <button class = "flight-cost__button button">Я готов лететь</button>
+        </div>
       </section>
       <section class = "features">
         <h2 class = "features__title">Подводные камни в масштабах космоса</h2>
