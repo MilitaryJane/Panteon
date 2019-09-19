@@ -3,6 +3,7 @@
 .flight-cost {
   position: relative;
   padding-top: 0px;
+  padding-bottom: 60px;
 
   &__photo {
     width: 289px;
@@ -101,6 +102,7 @@
 @media (min-width: 765px) {
   .flight-cost {
     padding-top: 23px;
+    padding-bottom: 150px;
 
     &__photo {
       width: 253px;
@@ -131,14 +133,14 @@
 
       padding-top: 48px;
       margin-left: 383px;
-      margin-bottom: 25px;
+      margin-bottom: 0px;
     }
 
     &__text {
       width: 306px;
 
       margin-left: 383px;
-      margin-bottom: 50px;
+      margin-bottom: 32px;
     }
 
     &__slogan {
@@ -185,7 +187,7 @@
     &__wrapper {
       width: 1140px;
       min-height: 308px;
-      margin-top: -277px;
+      margin-top: -280px;
 
       background-image: url("../img/substrate-1-desktop.jpg");
 
