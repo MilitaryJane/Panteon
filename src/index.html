@@ -57,8 +57,8 @@
           <span class = "promo__decor-text1">Пантеон</span>
           <span class = "promo__decor-text2">Олимп</span>
 
-          <div class="promo__video promo-video">
-            <div class = "promo-video__image-wrapper">
+          <div class="promo__video video">
+            <div class = "video__image-wrapper">
               <picture>
                   <source type="image/webp" media="(min-width: 1600px)"
                       srcset="img/video-1-desktop.webp, img/video-1-desktop@2x.webp 2x">
@@ -70,12 +70,12 @@
                       srcset="img/video-1-desktop.png, img/video-1-desktop@2x.png 2x">
                   <source media="(min-width: 765px)"
                       srcset="img/video-1-tablet.png, img/video-1-tablet.png 2x">
-                  <img class="promo-video__image" src="img/video-1-mobile.png"
-                      srcset="img/video-1-mobile@2x.png 2x" alt="Космонавты">
+                  <img class="video__image" src="img/video-1-mobile.png"
+                      srcset="img/video-1-mobile@2x.png 2x" alt="Марсианские кратеры">
               </picture>
-              <button class="promo-video__play-button" aria-label="Воспроизвести"><span class="promo-video__play-button-text">Смотреть видео</span></button>
+              <button class="video__play-button" aria-label="Воспроизвести"><span class="promo-video__play-button-text">Смотреть видео</span></button>
             </div>
-            <div class="promo-video__video-content">
+            <div class="video__video-content">
               <iframe src="https://#;controls=1" width="214" height="139"></iframe>
             </div>
           </div>
@@ -220,67 +220,108 @@
         </div>
       </section>
       <section class = "features">
-        <h2 class = "features__title">Подводные камни в масштабах космоса</h2>
-        <div class="features-video__content-wrapper">
-            <video class="features-video__content" poster="" preload="none">
-                <source src="#" type=''>
-            </video>
-            <button class="features-video__play-button play-button"><span class="features-video__play-button-text">Смотреть видео</span></button>
+        <h2 class = "features__title">Подводные камни в&nbsp;масштабах космоса</h2>
+        <div class = "features__video video video--features">
+          <div class = "video__image-wrapper video__image-wrapper--features">
+            <picture>
+                <source type="image/webp" media="(min-width: 1600px)"
+                    srcset="img/video-2-desktop.webp, img/video-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 765px)"
+                    srcset="img/video-2-tablet.webp, img/video-2-tablet@2x.webp 2x">
+                <source type="image/webp"
+                    srcset="img/video-2-mobile.webp, img/video-2-mobile@2x.webp 2x">
+                <source media="(min-width: 1600px)"
+                    srcset="img/video-2-desktop.png, img/video-2-desktop@2x.png 2x">
+                <source media="(min-width: 765px)"
+                    srcset="img/video-2-tablet.png, img/video-2-tablet.png 2x">
+                <img class="video__image video__image--features" src="img/video-2-mobile.png"
+                    srcset="img/video-2-mobile@2x.png 2x" alt="Космонавты">
+            </picture>
+            <button class="video__play-button video__play-button--features" aria-label="Воспроизвести"></button>
+          </div>
+          <div class="video__video-content video__video-content--features">
+            <iframe src="https://#;controls=1" width="291" height="172"></iframe>
+          </div>
         </div>
-        <ul class = "features__list">
+
+        <ul class = "features__list features__list--no-js">
           <li class = "features__item">
-            <button class = "features__question">Жить или выживать?</button>
-            <div class = "features__answer">
-                <p>Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
-                <p>
+            <button class = "features__question">Жить или выживать?
+              <svg class="features__tick features__tick--open" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+            </button>
+            <div class = "features__answer features__answer--open">
+                <b class = "features__answer-title">Жить или выживать?</b>
+                <p class = "features__paragraph">Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
+                <p class = "features__paragraph">
                   Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов,
                   а минимальная температура опускается до -140 градусов по Цельсию.
-                  Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.
+                  Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких&nbsp;часов до нескольких месяцев.
                 </p>
-                <p>
-                  На планете отсутствует магнитное поле, поэтому радиационный фон повышен.
+                <p class = "features__paragraph">
+                  На планете отсутствует магнитное поле,&nbsp;поэтому радиационный фон повышен.
                   А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным.
                   Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
                 </p>
             </div>
           </li>
           <li class = "features__item">
-            <button class = "features__question">Готовы ли технологии?</button>
+            <button class = "features__question">Готовы ли технологии?
+              <svg class="features__tick" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+            </button>
             <div class = "features__answer">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                  euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
-                </p>
-                <p>
-                  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                  quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
-                </p>
+              <b class = "features__answer-title">Готовы ли технологии?</b>
+              <p class = "features__paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+              </p>
+              <p class = "features__paragraph">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
             </div>
           </li>
           <li class = "features__item">
-            <button class = "features__question">Путешествие на грани фантастики</button>
+            <button class = "features__question">Путешествие на грани фантастики
+              <svg class="features__tick" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+            </button>
             <div class = "features__answer">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                  euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
-                </p>
-                <p>
-                  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                  quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
-                </p>
+              <b class = "features__answer-title">Путешествие на грани фантастики</b>
+              <p class = "features__paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+              </p>
+              <p class = "features__paragraph">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <p class = "features__paragraph">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
             </div>
           </li>
           <li class = "features__item">
-            <button class = "features__question">Жизнь на Марсе</button>
+            <button class = "features__question">Жизнь на Марсе
+              <svg class="features__tick" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+            </button>
             <div class = "features__answer">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                  euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
-                </p>
-                <p>
-                  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                  quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
-                </p>
+              <b class = "features__answer-title">Жизнь на Марсе</b>
+              <p class = "features__paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+              </p>
+              <p class = "features__paragraph">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
             </div>
           </li>
         </ul>
@@ -430,6 +471,7 @@
       </div>
   </footer>
 
-  <script src="js/main.min.js"></script>
+  <!-- <script src="js/main.min.js"></script> -->
+  <script src="js/features-list_controls.js"></script>
 </body>
 </html>
