@@ -1,0 +1,200 @@
+@import "_style-lib.scss";
+
+.video {
+  width: 214px;
+  height: 138px;
+
+  box-shadow: -1px 25px 54px 11px rgba(0,0,0,0.48);
+
+  &--features {
+    width: 291px;
+    height: 172px;
+
+    box-shadow: none;
+  }
+
+  &__image-wrapper {
+    position: relative;
+
+    width: 214px;
+    height: 138px;
+
+    &--close {
+      display: none;
+    }
+
+    &--features {
+      width: 291px;
+      height: 172px;
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 214px;
+    height: 138px;
+
+    &--features {
+      width: 291px;
+      height: 172px;
+    }
+  }
+
+  &__play-button {
+    position: absolute;
+
+    top: 45px;
+    left: 80px;
+    width: 52px;
+    height: 52px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    &::before {
+      @include pseudo-element;
+       width: 52px;
+       height: 52px;
+
+       top: 0;
+       left: 0;
+
+       border-radius: 50%;
+
+       background-color: $companion4-bg-color;
+    }
+
+    &::after {
+      @include pseudo-element;
+      top: 19px;
+      left: 22px;
+
+      border: 7px solid transparent;
+      border-left: 11px solid $base-bg-color;
+    }
+
+    &--features {
+      top: 60px;
+      left: 120px;
+    }
+  }
+
+  &__play-button-text {
+    display: none;
+  }
+
+  &__video-content {
+    display: none;
+
+    width: 214px;
+    height: 138px;
+
+    &--open {
+      display: block;
+    }
+
+    &--features {
+      width: 291px;
+      height: 172px;
+    }
+  }
+
+
+}
+
+
+
+@media (min-width: 765px) {
+  .video {
+    width: 515px;
+    height: 259px;
+
+    &--features {
+      width: 718px;
+      height: 361px;
+    }
+
+    &__image-wrapper {
+      width: 515px;
+      height: 259px;
+
+      &--features {
+        width: 718px;
+        height: 361px;
+      }
+    }
+
+    &__image {
+      width: 515px;
+      height: 259px;
+
+      &--features {
+        width: 718px;
+        height: 361px;
+      }
+    }
+
+    &__play-button {
+      width: 191px;
+
+      top: 104px;
+      left: 158px;
+
+      &--features {
+        top: 152px;
+        left: 333px;
+      }
+    }
+
+    &__play-button-text {
+      display: block;
+      padding-left: 58px;
+
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 600;
+
+      color: $companion1-text-color;
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .video {
+    width: 582px;
+    height: 292px;
+
+    &--features {
+      width: 1139px;
+      height: 572px;
+    }
+
+    &__image-wrapper {
+      width: 582px;
+      height: 292px;
+
+      &--features {
+        width: 1139px;
+        height: 572px;
+      }
+    }
+
+    &__image {
+      width: 582px;
+      height: 292px;
+
+      &--features {
+        width: 1139px;
+        height: 572px;
+      }
+    }
+
+    &__play-button {
+      top: 258px;
+      left: 543px;
+    }
+  }
+}
