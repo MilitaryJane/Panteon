@@ -3,7 +3,6 @@
 .flight-cost {
   position: relative;
   padding-top: 0px;
-  padding-bottom: 60px;
 
   &__photo {
     width: 289px;
@@ -46,7 +45,6 @@
 
   &__text {
     width: 290px;
-
 
     padding: 0;
     margin: 0;
@@ -102,7 +100,7 @@
 @media (min-width: 765px) {
   .flight-cost {
     padding-top: 23px;
-    padding-bottom: 150px;
+    padding-bottom: 87px;
 
     &__photo {
       width: 253px;
@@ -177,6 +175,7 @@
 @media (min-width: 1600px) {
   .flight-cost {
     padding-top: 35px;
+    padding-bottom: 160px;
 
     &__photo {
       width: 310px;
