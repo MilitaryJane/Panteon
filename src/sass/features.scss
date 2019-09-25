@@ -98,6 +98,11 @@
     }
   }
 
+  &__tick-2,
+  &__tick-3 {
+    display: none;
+  }
+
 
   &__answer {
     display:  none;
@@ -131,6 +136,7 @@
 @media (min-width: 765px) {
   .features {
     width: 765px;
+    min-height: 1120px;
     padding-top: 70px;
     padding-bottom: 17px;
     padding-left: 23px;
@@ -157,76 +163,87 @@
     }
 
     &__list {
+      position: relative;
       width: 250px;
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
     }
 
     &__item {
-      display: flex;
-      margin-bottom: 26px;
+      margin-bottom: 45px;
+
     }
 
     &__question {
-      align-self: flex-start;
-      margin-bottom: 16px;
+      margin-bottom: 0px;
+
     }
 
     &__tick {
-      position: absolute;
-
       right: 70px;
 
-      opacity: 0.4;
-
       &--open {
+        opacity: 1;
         transform: none;
 
         top: 2px;
         right: 70px;
+
       }
     }
 
 
+    &__tick-2--open,
+    &__tick-3--open {
+      display: block;
+      position: absolute;
+      top: 2px;
+      right: 60px;
+
+      opacity: 0.4;
+    }
+
+    &__tick-3--open {
+      right: 50px;
+
+      opacity: 0.2;
+    }
+
     &__answer {
-      display:  none;
       width: 437px;
-      padding-top: 18px;
+      padding-top: 0px;
       padding-bottom: 25px;
 
-      background-color: transparent;
+
 
       &--open {
-        display: block;
+        position: absolute;
         top: 0;
-        left: 300px;
-
+        left: 290px;
       }
     }
 
     &__answer-title {
-      display: none;
-    }
+      display: block;
 
-    &__paragraph {
       padding: 0;
       margin: 0;
-      margin-bottom: 12px;
+      margin-bottom: 30px;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+      font-size: 22px;
+      line-height: 22px;
+      font-weight: 700;
     }
   }
-
 }
 
 
 @media (min-width: 1600px) {
   .features {
     width: 1600px;
-    padding-top: 70px;
-    padding-bottom: 17px;
+    min-height: 1259px;
+    padding-top: 105px;
     padding-left: 230px;
     margin-left: -230px;
 
@@ -237,6 +254,24 @@
     (min-resolution: $retina-dppx) {
         background-image: url("../img/substrate-2-desktop@2x.jpg");
         background-size: 1600px cover;
+    }
+
+
+    &__title {
+      width: 1140px;
+
+      margin-bottom: 60px;
+
+      font-size: 51px;
+      line-height: 56px;
+    }
+
+    &__video {
+      margin-bottom: 73px
+    }
+
+    &__answer {
+      width: 765px;
     }
   }
 }
