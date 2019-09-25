@@ -193,8 +193,13 @@
     }
 
     &__play-button {
-      top: 258px;
-      left: 543px;
+      top: 118px;
+      left: 190px;
+
+      &--features {
+        top: 258px;
+        left: 543px;
+      }
     }
   }
 }
