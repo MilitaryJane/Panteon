@@ -23,6 +23,18 @@
   &:active {
     box-shadow: 0px 0px 30px 12px rgba(255,255,255,0.8);
   }
+
+  &--life-organization {
+    width: 160px;
+    padding: 16px 38px;
+
+    background-color: $companion4-bg-color;
+
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+    color: $companion1-text-color;
+  }
 }
 
 
