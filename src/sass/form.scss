@@ -1,0 +1,41 @@
+@import "_style-lib.scss";
+
+.form {
+  width: 250px;
+
+
+  &__field {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__input {
+    display: block;
+    width: 248px;
+    height: 50px;
+
+    box-sizing: border-box;
+    padding-top: 7px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $base-bg-color;
+
+    &:last-of-type {
+     margin-bottom: 56px;
+    }
+
+  }
+
+}
+
+
+
+
+@media (min-width: 1600px) {
+
+
+}

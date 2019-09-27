@@ -1,0 +1,200 @@
+@import "_style-lib.scss";
+
+.about-flight {
+  box-sizing: border-box;
+  width: 320px;
+
+  padding-top: 45px;
+
+  padding-left: 15px;
+  margin-left: -15px;
+
+  background-color: $companion1-bg-color;
+  color: $companion1-text-color;
+
+  background-image: url("../img/substrate-4-mobile.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+      background-image: url("../img/substrate-4-mobile@2x.jpg");
+      background-size: 320px cover;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+
+    width: 290px;
+
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+
+  &__paragraph {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 23px;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 26px;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+
+    color:$companion1-text-color;
+
+    &::after {
+      @include pseudo-element;
+
+      top: 20px;
+      left: 0;
+
+      width: 128px;
+      height: 1px;
+
+      background-color: $base-bg-color;
+    }
+
+  }
+
+}
+
+
+
+@media (min-width: 765px) {
+  .about-flight {
+    width: 765px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-top: 75px;
+
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-left: -23px;
+
+
+    background-image: url("../img/substrate-4-tablet.jpg");
+
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+        background-image: url("../img/substrate-4-tablet@2x.jpg");
+        background-size: 765px cover;
+    }
+
+    &__title {
+
+      margin-bottom: 61px;
+
+      width: 719px;
+
+      font-size: 46px;
+      line-height: 55px;
+      font-weight: bold;
+    }
+
+    &__wrapper {
+      width: 345px;
+      order: 1;
+    }
+
+    &__text {
+      width: 345px;
+      margin-bottom: 15px;
+    }
+
+    &__paragraph {
+      width: 283px;
+
+      margin-bottom: 23px;
+
+      &:first-child {
+        width: 345px;
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+
+    &__link {
+      margin-bottom: 0;
+    }
+
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .about-flight {
+    width: 1600px;
+
+
+    padding-top: 120px;
+
+    padding-left: 230px;
+    padding-right: 230px;
+    margin-left: -230px;
+
+
+    background-image: url("../img/substrate-4-desktop.jpg");
+
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+        background-image: url("../img/substrate-4-desktop@2x.jpg");
+        background-size: 1600px cover;
+    }
+
+    &__title {
+      margin-bottom: 65px;
+
+      width: 1140px;
+
+      font-size: 54px;
+      line-height: 60px;
+    }
+
+    &__wrapper {
+      width: 682px;
+    }
+
+    &__text {
+      width: 682px;
+      margin-bottom: 15px;
+    }
+
+    &__paragraph {
+      width: 682px;
+
+      &:first-child {
+        width: 682px;
+      }
+    }
+  }
+}
