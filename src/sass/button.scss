@@ -35,6 +35,12 @@
     font-weight: 700;
     color: $companion1-text-color;
   }
+
+  &--form {
+    width: 255px;
+
+    padding: 20px 73px;
+  }
 }
 
 
@@ -44,6 +50,12 @@
     padding: 17px 39px;
 
     align-self: flex-start;
+
+    &--form {
+      width: 255px;
+
+      padding: 20px 73px;
+    }
   }
 }
 
