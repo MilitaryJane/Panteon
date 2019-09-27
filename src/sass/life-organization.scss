@@ -2,6 +2,7 @@
 
 .life-organization {
   padding-top: 50px;
+  padding-bottom: 45px;
 
   &__title {
     width: 290px;
@@ -48,13 +49,12 @@
     margin: 0;
 
     width: 267px;
-
   }
 
   &__item-button {
     position: relative;
     display: block;
-    width: 267px;
+    width: 30px;
     min-height: 30px;
     box-sizing: border-box;
 
@@ -66,6 +66,7 @@
     border: none;
 
     background-color: transparent;
+
 
     &::before {
       @include pseudo-element;
@@ -81,10 +82,6 @@
       border-radius: 50%;
 
       background-color: $base-bg-color;
-    }
-
-    &--open::before {
-      background-color: $companion4-bg-color;
     }
 
     &::after {
@@ -136,28 +133,10 @@
 
   &__item-name {
     display: none;
-
-    &--open {
-      display: block;
-      padding: 0;
-      margin: 0;
-
-      font-size: 18px;
-      line-height: 24px;
-      font-weight: 700;
-
-      color: $companion2-text-color;
-      text-align: left;
-    }
   }
 
   &__item-wrapper {
     display: none;
-
-    &--open {
-      display: block;
-       padding-bottom: 48px;
-    }
   }
 
   &__item-image {
@@ -196,6 +175,33 @@
     margin: 0;
   }
 
+  //Поведение открытого слайда
+
+  &__item--open &__item-button {
+    width: 267px;
+
+    &::before {
+      background-color: $companion4-bg-color;
+    }
+  }
+
+  &__item--open &__item-name {
+      display: block;
+      padding: 0;
+      margin: 0;
+
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+
+      color: $companion2-text-color;
+      text-align: left;
+  }
+
+  &__item--open &__item-wrapper {
+      display: block;
+       padding-bottom: 48px;
+  }
 }
 
 
@@ -203,6 +209,7 @@
 @media (min-width: 765px) {
   .life-organization {
     padding-top: 60px;
+    padding-bottom: 18px;
 
     &__title {
       width: 719px;
@@ -232,18 +239,16 @@
     &__item {
       padding-top: 35px;
       margin-bottom: 0;
-      width: 115px;
+      margin-right: 86px;
+      width:30px;
 
-
-      &--open {
-        width: 320px;
+      &:last-child {
+        margin-right: 0;
       }
-
     }
 
     &__item-button {
       margin-bottom: 40px;
-
 
       &::before {
         top: -33px;
@@ -253,7 +258,6 @@
       &::after {
         top: 2px;
         left: -3px;
-
       }
 
       &--work::after {
@@ -267,16 +271,6 @@
       }
     }
 
-    &__item-name--open {
-      width: 250px;
-    }
-
-    &__item-wrapper {
-      &--open {
-        width: 719px;
-      }
-    }
-
     &__item-image {
       width: 719px;
       height: 334px;
@@ -284,16 +278,36 @@
       margin-bottom: 33px;
     }
 
-
     &__item-text {
+      width: 719px;
+    }
+
+
+
+    &__item--open {
+      width: 230px;
+    }
+
+    &__item--open &__item-button{
+      width: 230px;
+    }
+
+    &__item--open &__item-name {
+      width: 230px;
+    }
+
+    &__item--open &__item-wrapper {
       width: 719px;
     }
   }
 }
 
+
+
 @media (min-width: 1600px) {
   .life-organization {
     padding-top: 105px;
+    padding-bottom: 62px;
 
     &__title {
       width: 900px;
@@ -320,185 +334,70 @@
     }
 
     &__item {
-      display: flex;
-
-      padding-top: 0px;
-
-
+      padding-top: 40px;
+      margin-bottom: 5px;
+      margin-right: 0;
       width: 1140px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &__item-button {
       width: 155px;
-      height: 115px;
-
-      padding-left: 0px;
-      margin-bottom: 0px;
-
-      &::before {
-
-        top: 9px;
-        left: 0px;
-      }
 
       &::after {
-        top: 6px;
-        left: 42px;
+        top: -35px;
+        left: 45px;
       }
 
-      &--residence::after {
-        width: 30px;
-        height: 23px;
-      }
-
-      &--work::after {
-        width: 26px;
-        height: 19px;
-      }
-
-      &--research::after {
-        width: 22px;
-        height: 31px;
-      }
-
-      &--leisure::after {
-        width: 25px;
-        height: 21px;
-      }
-
-      &--environment::after {
-        width: 26px;
-        height: 27px;
-      }
-
-      &--open {
-        height: 165px;
-      }
-    }
-
-
-    &__item-name {
-
-      &--open {
-        transform: rotate(-90deg);
-        background-color: red;
-        padding: 0;
-        margin: 0;
-      }
-    }
-
-    &__item-wrapper {
-      display: none;
-
-      &--open {
-        display: block;
-         padding-bottom: 48px;
-      }
     }
 
     &__item-image {
-      width: 262px;
-      height: 125px;
+      width: 985px;
+      height: 457px;
 
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
-    &__item-title {
-      display: block;
-      width: 267px;
-
-      padding: 0;
-      margin: 0;
-      margin-bottom: 15px;
-
-      font-size: 21px;
-      line-height: 22px;
-      font-weight: 700;
-    }
 
     &__item-text {
-      width: 267px;
+      width: 985px;
 
-      padding: 0;
-      margin: 0;
-      margin-bottom: 42px;
-
-      font-size: 14px;
-      line-height: 24px;
-      font-weight: 300;
+      margin-bottom: 50px;
     }
 
-    &__details-link {
-      margin: 0;
+
+
+    &__item--open {
+      position: relative;
+      width: 1140px;
     }
 
-  //   &__item {
-  //     display: flex;
-  //     padding-top: 0px;
-  //     margin-bottom: 0;
-  //     width: 115px;
+    &__item--open &__item-button{
+      width: 155px;
+      height: 236px;
+      padding-left: 0px;
+    }
 
+    &__item--open &__item-name {
+      width: 200px;
 
-  //     &--open {
-  //       width: 320px;
-  //     }
+      text-align: end;
+      transform: rotate(-90deg);
+      position: absolute;
 
-  //   }
+      top: 90px;
+      left: -45px;
+    }
 
-  //   &__item-button {
-  //     margin-bottom: 0px;
-  //     width: 155px;
-  //     height: 30px;
+    &__item--open &__item-wrapper {
+      width: 985px;
+      position: absolute;
 
-  //     background-color: aqua;
-
-  //     &::before {
-  //       top: -33px;
-  //       left: 0px;
-  //     }
-
-  //     &::after {
-  //       top: 2px;
-  //       left: -3px;
-
-  //     }
-
-  //     &--work::after {
-  //       top: 8px;
-  //       left: -6px;
-  //     }
-
-  //     &--leisure::after {
-  //       top: 8px;
-  //       left: -6px;
-  //     }
-  //   }
-
-  //   &__item-name--open {
-  //     width: 300px;
-
-  //     background-color: blue;
-
-  //     transform: rotate(-90deg);
-  //   }
-
-  //   &__item-wrapper {
-  //     &--open {
-  //       width: 719px;
-  //     }
-  //   }
-
-  //   &__item-image {
-  //     width: 719px;
-  //     height: 334px;
-
-  //     margin-bottom: 33px;
-  //   }
-
-
-  //   &__item-text {
-  //     width: 719px;
-  //   }
-  // }
-}
+      top: 0;
+      left: 155px;
+    }
+  }
 }
