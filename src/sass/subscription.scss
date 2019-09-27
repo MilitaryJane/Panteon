@@ -1,0 +1,104 @@
+@import "_style-lib.scss";
+
+.subscription{
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 397px;
+  padding-top: 55px;
+  padding-bottom: 64px;
+  padding-left: 29px;
+  margin-left: -15px;
+
+
+  background-color: $companion1-bg-color;
+  color: $companion1-text-color;
+
+  background-image: url("../img/substrate-3-mobile.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+      background-image: url("../img/substrate-3-mobile@2x.jpg");
+      background-size: 320px cover;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 18px;
+
+    width: 290px;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+}
+
+
+@media (min-width: 765px) {
+  .subscription{
+    width: 344px;
+
+    padding-bottom: 64px;
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-left: 0px;
+    color: $companion1-text-color;
+
+    background-image: url("../img/substrate-3-tablet.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+        background-image: url("../img/substrate-3-tablet@2x.jpg");
+        background-size: 765px cover;
+    }
+
+    &__title {
+      margin-bottom: 18px;
+
+      width: 250px;
+
+    }
+
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .subscription{
+    width: 393px;
+    min-height: 415px;
+
+    padding-top: 65px;
+
+    padding-left: 69px;
+    padding-right: 69px;
+
+
+    background-image: url("../img/substrate-3-desktop.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+        background-image: url("../img/substrate-3-desktop@2x.jpg");
+        background-size: 1600px cover;
+    }
+
+    &__title {
+      margin-bottom: 18px;
+
+      width: 250px;
+
+    }
+
+  }
+}
