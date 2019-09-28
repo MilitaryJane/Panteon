@@ -34,6 +34,12 @@
     line-height: 19px;
     font-weight: 700;
     color: $companion1-text-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0px 0px 30px 5px rgba(121, 118, 118, 0.8);
+    }
   }
 
   &--form {
@@ -60,7 +66,5 @@
 }
 
 
-@media (min-width: 1600px) {
 
-}
 
