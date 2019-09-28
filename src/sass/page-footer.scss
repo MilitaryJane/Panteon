@@ -1,0 +1,108 @@
+@import "_style-lib.scss";
+
+.page-footer {
+  box-sizing: border-box;
+  width: 320px;
+
+  padding: 55px 69px 35px 69px;
+
+  background-color: $companion1-bg-color;
+  color: $companion1-text-color;
+
+  background-image: url("../img/substrate-5-mobile.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+      background-image: url("../img/substrate-5-mobile@2x.jpg");
+      background-size: 320px cover;
+  }
+
+  &__social {
+    margin-bottom: 27px;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 183px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+
+    text-align: center;
+
+    &::after {
+      @include pseudo-element;
+      top: 20px;
+      left: 18px;
+
+      width: 147px;
+      height: 1px;
+
+      background-color: $base-bg-color;
+    }
+  }
+}
+
+
+@media (min-width: 765px) {
+  .page-footer {
+    width: 765px;
+    padding: 95px 0 10px 0;
+
+    background-image: url("../img/substrate-5-tablet.jpg");
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+        background-image: url("../img/substrate-5-tablet@2x.jpg");
+        background-size: 765px;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__social {
+      margin-bottom: 0px;
+      order: 2;
+    }
+
+    &__link {
+      margin-bottom: 0;
+      order: 1;
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .page-footer {
+    width: 1600px;
+    padding: 115px 0 10px 0;
+
+    background-image: url("../img/substrate-5-desktop.jpg");
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+        background-image: url("../img/substrate-5-desktop@2x.jpg");
+        background-size: 1600px;
+    }
+
+
+    &__link {
+      padding-top: 5px;
+
+      &::after {
+        top: 25px;
+      }
+    }
+  }
+}
