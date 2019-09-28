@@ -6,21 +6,22 @@
   display: flex;
   justify-content: space-between;
 
+
   &__image {
     width: 39px;
     height: 39px;
-    color: #E12457;
+    color: $companion4-bg-color;
   }
 
   &__text-wrapper {
-    width: 96px;
+    width: 74px;
     padding-top: 6px;
   }
 
   &__name-text,
   &__text {
     display: inline-block;
-    width: 96px;
+    width: 74px;
     padding: 0;
     margin: 0;
   }
@@ -36,6 +37,43 @@
     line-height: 13px;
     font-weight: 100;
   }
+
+
+  &--footer {
+    width: 114px;
+    height: 32px;
+    padding: 0 30px;
+
+  }
+
+  &--footer &__image {
+    width: 32px;
+    height: 32px;
+    color: $base-bg-color;
+  }
+
+  &--footer &__text-wrapper {
+    width: 74px;
+    padding-top: 4px;
+  }
+
+  &--footer &__name-text,
+  &--footer &__text {
+    width: 74px;
+  }
+
+  &--footer &__name-text {
+    font-size: 14px;
+    line-height: 12px;
+    font-weight: 600;
+  }
+
+  &--footer &__text {
+    font-size: 9px;
+    line-height: 9px;
+    font-weight: 100;
+  }
+
 }
 
 
@@ -63,6 +101,12 @@
       font-size: 21px;
       line-height: 16px;
     }
+
+    &--footer {
+      width: 114px;
+      padding: 0;
+
+    }
   }
 }
 
@@ -81,13 +125,40 @@
     }
 
     &__name-text {
-      font-size: 21px;
+      font-size: 19px;
       line-height: 16px;
     }
 
     &__text {
       font-size: 15.75px;
       line-height: 21px;
+    }
+
+
+    &--footer {
+      width: 170px;
+    }
+
+    &--footer &__text-wrapper {
+      width: 120px;
+      padding-top: 4px;
+    }
+
+    &--footer &__name-text,
+    &--footer &__text {
+      width: 120px;
+    }
+
+    &--footer &__name-text {
+      font-size: 16px;
+      line-height: 14px;
+      font-weight: 600;
+    }
+
+    &--footer &__text {
+      font-size: 11px;
+      line-height: 11px;
+      font-weight: 100;
     }
   }
 }
