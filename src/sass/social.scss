@@ -15,6 +15,7 @@
 
     list-style: none;
   }
+
 }
 
 
@@ -40,6 +41,15 @@
 
     &__list {
       width: 172px;
+    }
+
+    &__icon:focus,
+    &__icon:hover {
+      opacity: 0.6;
+    }
+
+    &__icon:active {
+      opacity: 0.4;
     }
   }
 }
