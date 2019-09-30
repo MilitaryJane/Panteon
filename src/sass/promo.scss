@@ -105,7 +105,17 @@
       box-shadow: 6px -5px 0px 0px $base-bg-color;
     }
 
+    &:focus,
+    &:hover {
+      background-color: $companion10-bg-color;
+    }
+
+    &:active {
+      background-color: $companion9-bg-color;
+    }
   }
+
+
 }
 
 
