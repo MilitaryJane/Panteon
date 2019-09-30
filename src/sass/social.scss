@@ -1,0 +1,55 @@
+@import "_style-lib.scss";
+
+.social {
+  width: 183px;
+
+  &__text {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+}
+
+
+
+@media (min-width: 765px) {
+  .social {
+    width: 312px;
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+      display: block;
+      width: 125px;
+
+      padding: 0;
+      padding-top: 5px;
+      margin: 0;
+
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+
+    &__list {
+      width: 172px;
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .social {
+
+    &__text {
+      padding-top: 7px;
+    }
+  }
+}
