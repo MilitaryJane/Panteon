@@ -13,7 +13,16 @@
   &__promo {
     margin-top: 80px;
   }
+
+  &--no-js .toggle {
+    display: none;
+  }
+
+  &--no-js .site-list {
+    display: flex;
+  }
 }
+
 
 @media (min-width: 765px) {
   .main-nav {
