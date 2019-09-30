@@ -18,15 +18,33 @@
     box-sizing: border-box;
     padding-top: 7px;
     padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 20px;
 
     background-color: transparent;
     border: none;
     border-bottom: 1px solid $base-bg-color;
 
+    font-weight: 600;
+    color: $companion1-text-color;
+
+
+    &:-webkit-autofill {
+      box-shadow: inset 0 0 0 50px rgb(76, 54, 113)!important;
+      -webkit-text-fill-color: #bbb !important;
+    }
+
+    &::placeholder {
+      font-weight: 400;
+    }
+
     &:last-of-type {
      margin-bottom: 56px;
     }
+
   }
 }
+
+
+
 
