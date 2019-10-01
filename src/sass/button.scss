@@ -2,6 +2,7 @@
 
 .button {
   box-sizing: border-box;
+  display: block;
   width: 290px;
   padding: 17px 83px;
 
@@ -57,10 +58,12 @@
 
     align-self: flex-start;
 
+    &--life-organization {
+      width: 160px;
+    }
+
     &--form {
       width: 255px;
-
-      padding: 20px 73px;
     }
   }
 }
