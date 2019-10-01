@@ -7,6 +7,7 @@
   padding-top: 45px;
 
   padding-left: 15px;
+  padding-right: 15px;
   margin-left: -15px;
 
   background-color: $companion1-bg-color;
@@ -54,30 +55,8 @@
   }
 
   &__link {
-    position: relative;
-    display: block;
-    padding: 0;
     margin: 0;
     margin-bottom: 26px;
-
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-
-    color:$companion1-text-color;
-
-    &::after {
-      @include pseudo-element;
-
-      top: 20px;
-      left: 0;
-
-      width: 128px;
-      height: 1px;
-
-      background-color: $base-bg-color;
-    }
-
   }
 
 }

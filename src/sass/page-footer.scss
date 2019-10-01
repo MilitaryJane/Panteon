@@ -25,30 +25,8 @@
   }
 
   &__link {
-    position: relative;
-    display: block;
-    width: 183px;
-    padding: 0;
     margin: 0;
     margin-bottom: 40px;
-
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
-    color: $companion1-text-color;
-
-    text-align: center;
-
-    &::after {
-      @include pseudo-element;
-      top: 20px;
-      left: 18px;
-
-      width: 147px;
-      height: 1px;
-
-      background-color: $base-bg-color;
-    }
   }
 }
 
@@ -95,15 +73,6 @@
     (min-resolution: $retina-dppx) {
         background-image: url("../img/substrate-5-desktop@2x.jpg");
         background-size: 1600px;
-    }
-
-
-    &__link {
-      padding-top: 5px;
-
-      &::after {
-        top: 25px;
-      }
     }
   }
 }
