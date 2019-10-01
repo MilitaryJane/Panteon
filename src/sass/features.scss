@@ -46,6 +46,23 @@
     list-style: none;
   }
 
+  &__list--no-js &__question {
+    display: none;
+  }
+
+  &__list--no-js &__answer,
+  &__list--no-js &__answer-title {
+    display: block;
+  }
+
+  &__list--no-js &__answer-title {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+
+
+
   &__item {
     margin-bottom: 26px;
 
@@ -96,12 +113,11 @@
 
       top: 4px;
       right: 6px;
-
     }
   }
 
-  &__tick-2,
-  &__tick-3 {
+  &__tick--2,
+  &__tick--3 {
     display: none;
   }
 
@@ -186,6 +202,7 @@
       right: 70px;
 
       &--open {
+        display: block;
         opacity: 1;
         transform: none;
 
@@ -196,9 +213,8 @@
     }
 
 
-    &__tick-2--open,
-    &__tick-3--open {
-      display: block;
+    &__tick--2,
+    &__tick--3 {
       position: absolute;
       top: 2px;
       right: 60px;
@@ -206,7 +222,7 @@
       opacity: 0.4;
     }
 
-    &__tick-3--open {
+    &__tick--3 {
       right: 50px;
 
       opacity: 0.2;
@@ -216,8 +232,6 @@
       width: 437px;
       padding-top: 0px;
       padding-bottom: 25px;
-
-
 
       &--open {
         position: absolute;
