@@ -1,7 +1,6 @@
 {
   "name": "panteon",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -16,10 +15,12 @@
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
+    "gulp-stylelint": "^9.0.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglifyjs": "^0.6.2",
     "gulp-webp": "^4.0.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "stylelint": "^10.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -33,5 +34,6 @@
   "bugs": {
     "url": "https://github.com/MilitaryJane/Panteon/issues"
   },
-  "homepage": "https://github.com/MilitaryJane/Panteon#readme"
+  "homepage": "https://github.com/MilitaryJane/Panteon#readme",
+  "description": ""
 }
