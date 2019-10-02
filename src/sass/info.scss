@@ -3,14 +3,15 @@
 .info {
   box-sizing: border-box;
   width: 320px;
-  margin-left: -15px;
-  padding: 35px 15px;
+
+  padding: 35px 0;
 
   background-color: $companion7-bg-color;
 
   &__list {
     width: 290px;
     padding: 0;
+    margin-left: 15px;
 
     border-spacing: 0;
 
