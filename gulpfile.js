@@ -81,6 +81,7 @@ gulp.task('sprite', function () {
 
 
 
+
 gulp.task('scripts-libs', function () {
     return gulp.src(['src/libs/picturefill/dist/*.min.js',
             'src/libs/svg4everybody/dist/*.min.js',
@@ -145,8 +146,8 @@ gulp.task('prebuild', async function () {
 })
 
 
-gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch', 'scripts-libs', 'images', 'webp', 'scripts'));
-gulp.task('build', gulp.series('clean', 'sass', 'scripts-libs', 'images', 'webp', 'scripts', 'prebuild'));
+gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch', 'scripts-libs', 'images', 'scripts'));
+gulp.task('build', gulp.series('clean', 'sass', 'scripts-libs', 'images', 'scripts', 'prebuild'));
 
 
 function deploy(cb) {
