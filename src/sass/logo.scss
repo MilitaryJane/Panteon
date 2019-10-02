@@ -14,16 +14,19 @@
   }
 
   &__text-wrapper {
-    width: 74px;
+    display: block;
+    width: 96px;
     padding-top: 6px;
   }
 
   &__name-text,
   &__text {
     display: inline-block;
-    width: 74px;
+    width: 96px;
     padding: 0;
     margin: 0;
+
+    color: $companion1-text-color;
   }
 
   &__name-text {
@@ -43,13 +46,19 @@
     width: 114px;
     height: 32px;
     padding: 0 30px;
-
   }
 
   &--footer &__image {
     width: 32px;
     height: 32px;
     color: $base-bg-color;
+  }
+
+  &--footer:focus &__image,
+  &--footer:hover &__image {
+    color: $companion2-text-color;
+    width: 35px;
+    height: 35px;
   }
 
   &--footer &__text-wrapper {
