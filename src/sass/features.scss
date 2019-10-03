@@ -61,8 +61,6 @@
     font-weight: 700;
   }
 
-
-
   &__item {
     margin-bottom: 26px;
 
@@ -72,9 +70,11 @@
   }
 
   &__question {
+    box-sizing: border-box;
     position: relative;
     width: 290px;
     padding: 0;
+    padding-right: 65px;
     margin: 0;
     margin-bottom: 16px;
 
