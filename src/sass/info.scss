@@ -5,13 +5,19 @@
   width: 320px;
 
   padding: 35px 0;
+  padding-left: 15px;
 
   background-color: $companion7-bg-color;
 
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   &__list {
-    width: 290px;
+    width: 100%;
     padding: 0;
-    margin-left: 15px;
 
     border-spacing: 0;
 
@@ -41,7 +47,7 @@
     &--value td::before {
       @include pseudo-element;
       top: 25px;
-      left: 20px;
+      left: 0;
 
       width: 1px;
       height: 49px;
@@ -65,21 +71,19 @@
 
   &__subitem {
     box-sizing: border-box;
-    width: 130px;
+    width: 153px;
+    padding-left: 15px;
+    padding-right: 20px;
+
+    &:first-of-type {
+      padding-left: 0px;
+    }
+
+    &:last-of-type {
+      padding-right: 0px;
+    }
   }
 
-
-  &__subitem--size {
-    width: 160px;
-    padding-left: 30px;
-  }
-
-  &__subitem--weight,
-  &__subitem--sputnik,
-  &__subitem--mountain,
-  &__subitem--temperature {
-    display: none;
-  }
 }
 
 
@@ -88,10 +92,6 @@
     width: 765px;
     padding: 40px 23px;
 
-
-    &__list {
-      width: 719px;
-    }
 
     &__item {
 
@@ -102,49 +102,17 @@
         line-height: 46px;
         font-weight: 700;
       }
-
-
-      &--value td::before {
-        top: 40px;
-        left: 0px;
-      }
-
-      &--value td:nth-child(2)::before {
-        left: -3px;
-      }
-
-      &--value td:nth-child(3)::before {
-        left: 2px;
-      }
     }
 
     &__subitem {
-      width: 158px;
-      padding-left: 30px;
-    }
+      width: 210px;
+      padding-left: 40px;
+      padding-right: 35px;
 
-    &__subitem--distance {
-      padding-left: 0;
-      padding-right: 33px;
-
-    }
-
-    &__subitem--size {
-      width: 202px;
-      padding-left: 35px;
-      padding-right: 15px;
-    }
-
-    &__subitem--weight {
-      display: block;
-      width: 202px;
-      padding-left: 43px;
-      padding-right: 15px;
-    }
-
-    &__subitem--sputnik {
-      display: block;
-      padding-left: 32px;
+      &:first-of-type,
+      &:last-of-type {
+        width: 154px;
+      }
     }
   }
 }
@@ -156,64 +124,60 @@
     padding: 43px 230px;
 
 
-    &__list {
-      width: 1140px;
-    }
+    // &__item {
+    //   &--value td:nth-child(2)::before {
+    //     left: -12px;
+    //   }
 
-    &__item {
-      &--value td:nth-child(2)::before {
-        left: -12px;
-      }
+    //   &--value td:nth-child(5)::before {
+    //     left: 5px;
+    //   }
 
-      &--value td:nth-child(5)::before {
-        left: 5px;
-      }
-
-      &--value td:nth-child(6)::before {
-        left: 29px;
-      }
-    }
+    //   &--value td:nth-child(6)::before {
+    //     left: 29px;
+    //   }
+    // }
 
     &__subitem {
-      width: 165px;
+      width: 215px;
     }
 
-    &__subitem--distance {
-      padding-left: 0;
-      padding-right: 33px;
-    }
+    // &__subitem--distance {
+    //   padding-left: 0;
+    //   padding-right: 33px;
+    // }
 
-    &__subitem--size {
-      width: 195px;
-      padding-left: 28px;
-      padding-right: 15px;
-    }
+    // &__subitem--size {
+    //   width: 195px;
+    //   padding-left: 28px;
+    //   padding-right: 15px;
+    // }
 
-    &__subitem--weight {
-      width: 225px;
-      padding-left: 43px;
-      padding-right: 15px;
-    }
+    // &__subitem--weight {
+    //   width: 225px;
+    //   padding-left: 43px;
+    //   padding-right: 15px;
+    // }
 
-    &__subitem--sputnik {
-      width: 195px;
-      padding-left: 43px;
-      padding-right: 30px;
-    }
+    // &__subitem--sputnik {
+    //   width: 195px;
+    //   padding-left: 43px;
+    //   padding-right: 30px;
+    // }
 
-    &__subitem--mountain{
-      display: block;
-      width: 195px;
-      padding-left: 45px;
-      padding-right: 15px;
-    }
+    // &__subitem--mountain{
+    //   display: block;
+    //   width: 195px;
+    //   padding-left: 45px;
+    //   padding-right: 15px;
+    // }
 
-    &__subitem--temperature {
-      display: block;
-      width: 165px;
-      padding-left: 68px;
-      padding-right: 0px;
-    }
+    // &__subitem--temperature {
+    //   display: block;
+    //   width: 165px;
+    //   padding-left: 68px;
+    //   padding-right: 0px;
+    // }
   }
 }
 
