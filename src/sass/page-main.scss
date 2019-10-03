@@ -1,0 +1,53 @@
+@import "_style-lib.scss";
+
+.page-main {
+
+  &__info {
+  margin-left: -15px;
+  }
+
+  &__features {
+    margin-left: -15px;
+  }
+
+  &__about-flight {
+    margin-left: -15px;
+  }
+}
+
+
+@media (min-width: 765px) {
+  .page-main {
+
+    &__info {
+      margin-left: -23px;
+    }
+
+    &__features {
+      margin-left: -23px;
+    }
+
+    &__about-flight {
+      margin-left: -23px;
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .page-main {
+
+    &__info {
+      margin-left: -230px;
+    }
+
+    &__features {
+      margin-left: -230px;
+    }
+
+    &__about-flight {
+      margin-left: -230px;
+    }
+  }
+}
+
