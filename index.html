@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panteon</title>
+    <link href="fonts/montserrat-thin.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-light.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-regular.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-bold.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-semibold.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-black.woff2" rel="preload" as="font">
+    <link href="css/styles.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <header class="page-header">
+    <div class="container">
+        <nav class = "main-nav main-nav--no-js">
+          <div class = "main-nav__wrapper">
+            <a class="main-nav__logo logo" aria-label="Логотип проекта Panteon">
+                <svg class="logo__image" width="39" height="39">
+                    <use xlink:href="img/sprite.svg#sprite-logo"></use>
+                </svg>
+                <div class = "logo__text-wrapper">
+                  <span class = "logo__name-text">PANTHEON<span class = "logo__text">progect</span></span>
+
+                </div>
+            </a>
+            <button class="main-nav__toggle toggle" type="button" aria-label="Меню" ><span
+              class="toggle__name">Меню</span><span class="toggle__burger"></span>
+            </button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class = "site-list__item">
+              <a class="site-list__item-link" href="#">О проекте</a>
+            </li>
+            <li class = "site-list__item">
+              <a class="site-list__item-link" href="#">Новости</a>
+            </li>
+            <li class = "site-list__item">
+              <a class="site-list__item-link" href="#">Критерии отбора</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class = "main-nav__promo promo">
+          <h1 class = "visually-hidden">O проекте Panteon</h1>
+          <div class = "promo__caption">
+            <span class = "promo__text1">Пункт назначения:</span>
+            <span class = "promo__text2">Пантеон,</span>
+            <span class = "promo__text3">Марс</span>
+          </div>
+
+          <span class = "promo__decor-text1">Пантеон</span>
+          <span class = "promo__decor-text2">Олимп</span>
+
+          <div class="promo__video video">
+            <div class = "video__image-wrapper">
+              <picture>
+                  <source type="image/webp" media="(min-width: 1600px)"
+                      srcset="img/video-1-desktop.webp, img/video-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 765px)"
+                      srcset="img/video-1-tablet.webp, img/video-1-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                      srcset="img/video-1-mobile.webp, img/video-1-mobile@2x.webp 2x">
+                  <source media="(min-width: 1600px)"
+                      srcset="img/video-1-desktop.png, img/video-1-desktop@2x.png 2x">
+                  <source media="(min-width: 765px)"
+                      srcset="img/video-1-tablet.png, img/video-1-tablet.png 2x">
+                  <img class="video__image" src="img/video-1-mobile.png"
+                      srcset="img/video-1-mobile@2x.png 2x" alt="Марсианские кратеры">
+              </picture>
+              <button class="video__play-button" aria-label="Воспроизвести"><span class="video__play-button-text">Смотреть видео</span></button>
+            </div>
+            <div class="video__video-content">
+              <iframe src="https://#;controls=1" width="214" height="139"></iframe>
+            </div>
+          </div>
+
+          <div class = "promo__slogan">Первый город на&nbsp;планете Марс недалеко от горы Олимп</div>
+
+          <a class = "promo__link" href = "#page-main"><span class = "visually-hidden">Узнать больше о проекте</span></a>
+        </section>
+    </div>
+  </header>
+  <main class="page-main" id = "page-main">
+    <div class="container">
+      <section class = "page-main__info info">
+        <h2 class = "visually-hidden">Справочная информация о Марсе</h2>
+        <table class="info__list">
+            <tr class = "info__item info__item--value">
+                <td class="info__subitem info__subitem--distance">
+                    4
+                </td>
+                <td class="info__subitem info__subitem--size">
+                    7
+                </td>
+                <td class="info__subitem info__subitem--weight">
+                    10,7%
+                </td>
+                <td class="info__subitem info__subitem--sputnik">
+                    2
+                </td>
+                <td class="info__subitem info__subitem--mountain">
+                    21 км
+                </td>
+                <td class="info__subitem info__subitem--temperature">
+                   +20
+                </td>
+            </tr>
+            <tr class = "info__item info__item--field ">
+                <td class="info__subitem info__subitem--distance">
+                    четвёртая планета по&nbsp;удалённости от&nbsp;Солнца
+                </td>
+                <td class="info__subitem info__subitem--size">
+                    седьмая по размерам планета Солнечной системы
+                </td>
+                <td class="info__subitem info__subitem--weight">
+                  массы Земли<br>(ваш вес будет в 3 раза меньше, чем на Земле)
+                </td>
+                <td class="info__subitem info__subitem--sputnik">
+                  спутника вместо Луны (как картошка, только больше)
+                </td>
+                <td class="info__subitem info__subitem--mountain">
+                  высота самой высокой горы Марса
+                </td>
+                <td class="info__subitem info__subitem--temperature">
+                  максимальная температура на&nbsp;поверхности
+                </td>
+            </tr>
+          </table>
+      </section>
+      <section class = "page-main__about-Mars about-Mars">
+        <h2 class = "about-Mars__title title">Марс. Вспомнить всё</h2>
+        <div class = "about-Mars__column">
+          <h3 class = "about-Mars__subtitle subtitle">Что такое Марс?</h3>
+          <div class = "about-Mars__text about-Mars__text--1 text">
+              <p class = "text__paragraph">Планета Солнечной системы, названа в честь Марса — древнеримского бога войны.
+                Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
+              <p class = "text__paragraph">Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
+          </div>
+        </div>
+        <div class = "about-Mars__column">
+          <h3 class = "about-Mars__subtitle subtitle">Где это? Как туда доехать?</h3>
+          <div class = "about-Mars__text about-Mars__text--2 text">
+              <p class = "text__paragraph text__paragraph--more-margin">Расстояние до Марса — почти 56 миллионов километров. </p>
+              <p class = "text__paragraph">Чтобы преодалеть такое расстояние, нужно&nbsp;лететь на межпланетоном корабле 7-8 месяцев.</p>
+          </div>
+        </div>
+        <div class= "about-Mars__illustration illustration">
+          <div class = "illustration__wrapper">
+            <span class = "illustration__planet-name illustration__planet-name--Earth">Earth</span>
+            <span class = "illustration__planet-name illustration__planet-name--Mars">Mars</span>
+            <span class = "illustration__text illustration__text--distance">56 <sup>mln km</sup></span>
+            <span class = "illustration__text illustration__text--time">7 <sup>mths</sup></span>
+          </div>
+        </div>
+      </section>
+      <section class = "about-project">
+          <h2 class = "about-project__title title">От идеи до&nbsp;реализации</h2>
+          <h3 class = "about-project__subtitle subtitle subtitle--big">Илон Маск. Гений&nbsp;или безумец?</h3>
+          <div class = "about-project__text text text--about-project">
+            <p class = "text__paragraph">Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер.
+            Основатель компаний SpaceX и X.com, позже переименованной в PayPal.
+            Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных:
+            создать внеземную цивилизацию.</p>
+          </div>
+          <div class = "about-project__photo-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 765px)"
+                srcset="img/content/photo-1-desktop.webp, img/content/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/content/photo-1-mobile.webp, img/content/photo-1-mobile@2x.webp 2x">
+              <source media="(min-width: 765px)"
+                srcset="img/content/photo-1-desktop.jpg, img/content/photo-1-desktop@2x.jpg 2x">
+              <img class="about-project__photo" src="img/content/photo-1-mobile.jpg"
+                srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Фото Илона Маска">
+            </picture>
+          </div>
+          <blockquote class = "about-project__quote">
+            Мы должны сделать эту мечту реальностью за наше время
+            жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность.
+          </blockquote>
+          <div class = "about-project__text text text--about-project text--about-project-big">
+            <p class = "text__paragraph">  — заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика).
+              Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».</p>
+            <p> Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.</p>
+          </div>
+      </section>
+      <section class = "flight-cost">
+          <picture>
+              <source type="image/webp" media="(min-width: 1600px)"
+                srcset="img/content/photo-2-desktop.webp, img/content/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 765px)"
+                srcset="img/content/photo-2-tablet.webp, img/content/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/content/photo-2-mobile.webp, img/content/photo-2-mobile@2x.webp 2x">
+              <source media="(min-width: 1600px)"
+                srcset="img/content/photo-2-desktop.jpg, img/content/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 765px)"
+                srcset="img/content/photo-2-tablet.jpg, img/content/photo-2-tablet@2x.jpg 2x">
+              <img class="flight-cost__photo" src="img/content/photo-2-mobile.jpg"
+                srcset="img/content/photo-2-mobile@2x.jpg 2x" alt="Фото Илона Маска">
+            </picture>
+        <div class="flight-cost__wrapper">
+          <h2 class = "flight-cost__title">Стоимость перелета</h2>
+          <div class  = "flight-cost__text">
+            Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов.
+            Маск стремится сократить эту цифру в 20 000 раз, что составит <b>500 000 долларов</b> на человека.
+          </div>
+          <div class = "flight-cost__slogan">
+            <span class = "flight-cost__price">$500 k</span>
+            <span class = "flight-cost__slogan-text">и ты на Марсе!</span>
+          </div>
+
+          <button class = "flight-cost__button button">Я готов лететь</button>
+        </div>
+      </section>
+      <section class = "page-main__features features">
+        <h2 class = "features__title">Подводные камни в&nbsp;масштабах космоса</h2>
+        <div class = "features__video video video--features">
+          <div class = "video__image-wrapper video__image-wrapper--features">
+            <picture>
+                <source type="image/webp" media="(min-width: 1600px)"
+                    srcset="img/video-2-desktop.webp, img/video-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 765px)"
+                    srcset="img/video-2-tablet.webp, img/video-2-tablet@2x.webp 2x">
+                <source type="image/webp"
+                    srcset="img/video-2-mobile.webp, img/video-2-mobile@2x.webp 2x">
+                <source media="(min-width: 1600px)"
+                    srcset="img/video-2-desktop.png, img/video-2-desktop@2x.png 2x">
+                <source media="(min-width: 765px)"
+                    srcset="img/video-2-tablet.png, img/video-2-tablet.png 2x">
+                <img class="video__image video__image--features" src="img/video-2-mobile.png"
+                    srcset="img/video-2-mobile@2x.png 2x" alt="Космонавты">
+            </picture>
+            <button class="video__play-button video__play-button--features" aria-label="Воспроизвести"></button>
+          </div>
+          <div class="video__video-content video__video-content--features">
+            <iframe src="https://#;controls=1" width="291" height="172"></iframe>
+          </div>
+        </div>
+
+        <ul class = "features__list features__list--no-js">
+          <li class = "features__item features__item--open">
+            <button class = "features__question">Жить или выживать?
+              <svg class="features__tick" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <svg class="features__tick features__tick--2" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <svg class="features__tick features__tick--3" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+            </button>
+            <div class = "features__answer">
+                <b class = "features__answer-title">Жить или выживать?</b>
+                <p class = "features__paragraph">Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
+                <p class = "features__paragraph">
+                  Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов,
+                  а минимальная температура опускается до -140 градусов по Цельсию.
+                  Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких&nbsp;часов до нескольких месяцев.
+                </p>
+                <p class = "features__paragraph">
+                  На планете отсутствует магнитное поле,&nbsp;поэтому радиационный фон повышен.
+                  А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным.
+                  Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
+                </p>
+
+                <p class = "features__paragraph">
+                  Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов,
+                  а минимальная температура опускается до -140 градусов по Цельсию.
+                  Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких&nbsp;часов до нескольких месяцев.
+                </p>
+                <p class = "features__paragraph">
+                  На планете отсутствует магнитное поле,&nbsp;поэтому радиационный фон повышен.
+                  А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным.
+                  Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
+                </p>
+                <p class = "features__paragraph">
+                  Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов,
+                  а минимальная температура опускается до -140 градусов по Цельсию.
+                  Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких&nbsp;часов до нескольких месяцев.
+                </p>
+                <p class = "features__paragraph">
+                  На планете отсутствует магнитное поле,&nbsp;поэтому радиационный фон повышен.
+                  А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным.
+                  Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
+                </p>
+                <p class = "features__paragraph">
+                  Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов,
+                  а минимальная температура опускается до -140 градусов по Цельсию.
+                  Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких&nbsp;часов до нескольких месяцев.
+                </p>
+                <p class = "features__paragraph">
+                  На планете отсутствует магнитное поле,&nbsp;поэтому радиационный фон повышен.
+                  А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным.
+                  Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
+                </p>
+            </div>
+          </li>
+          <li class = "features__item">
+            <button class = "features__question">Готовы ли технологии?
+              <svg class="features__tick" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <svg class="features__tick features__tick--2" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <svg class="features__tick features__tick--3" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+            </button>
+            <div class = "features__answer">
+              <b class = "features__answer-title">Готовы ли технологии?</b>
+              <p class = "features__paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+              </p>
+              <p class = "features__paragraph">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <p class = "features__paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+              </p>
+              <p class = "features__paragraph">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <p class = "features__paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+              </p>
+              <p class = "features__paragraph">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+            </div>
+          </li>
+          <li class = "features__item">
+            <button class = "features__question">Путешествие на грани<br> фантастики
+              <svg class="features__tick" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <svg class="features__tick features__tick--2" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <svg class="features__tick features__tick--3" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+            </button>
+            <div class = "features__answer">
+              <b class = "features__answer-title">Путешествие на грани фантастики</b>
+              <p class = "features__paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+              </p>
+              <p class = "features__paragraph">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <p class = "features__paragraph">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+            </div>
+          </li>
+          <li class = "features__item">
+            <button class = "features__question">Жизнь на Марсе
+              <svg class="features__tick" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <svg class="features__tick features__tick--2" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <svg class="features__tick features__tick--3" width="8" height="15">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+            </button>
+            <div class = "features__answer">
+              <b class = "features__answer-title">Жизнь на Марсе</b>
+              <p class = "features__paragraph">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+              </p>
+              <p class = "features__paragraph">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class = "life-organization">
+        <h2 class = "life-organization__title">Организация жизни в колонии</h2>
+        <ul class = "life-organization__list life-organization__list--no-js">
+          <li class = "life-organization__item life-organization__item--open">
+            <button class = "life-organization__item-button life-organization__item-button--residence">
+              <span class = "life-organization__item-name">Проживание</span>
+            </button>
+            <div class = "life-organization__item-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1600px)"
+                    srcset="img/content/photo-3-desktop.webp, img/content/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 765px)"
+                    srcset="img/content/photo-3-tablet.webp, img/content/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp"
+                    srcset="img/content/photo-3-mobile.webp, img/content/photo-3-mobile@2x.webp 2x">
+                <source media="(min-width: 1600px)"
+                    srcset="img/content/photo-3-desktop.jpg, img/content/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 765px)"
+                    srcset="img/content/photo-3-tablet.jpg, img/content/photo-3-tablet.jpg 2x">
+                <img class="life-organization__item-image" src="img/content/photo-3-mobile.jpg"
+                    srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Фото обустройства жилого помещения">
+              </picture>
+              <h3 class = "life-organization__item-title">Проживание</h3>
+              <p class="life-organization__item-text">
+                В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека.
+                Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.
+              </p>
+              <a class = "life-organization__details-link button button--life-organization" href = "#">Подробнее</a>
+            </div>
+          </li>
+          <li class = "life-organization__item ">
+              <button class = "life-organization__item-button life-organization__item-button--work">
+                <span class = "life-organization__item-name ">Работа</span>
+              </button>
+              <div class = "life-organization__item-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1600px)"
+                      srcset="img/content/photo-3-desktop.webp, img/content/photo-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 765px)"
+                      srcset="img/content/photo-3-tablet.webp, img/content/photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                      srcset="img/content/photo-3-mobile.webp, img/content/photo-3-mobile@2x.webp 2x">
+                  <source media="(min-width: 1600px)"
+                      srcset="img/content/photo-3-desktop.jpg, img/content/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 765px)"
+                      srcset="img/content/photo-3-tablet.jpg, img/content/photo-3-tablet.jpg 2x">
+                  <img class="life-organization__item-image" src="img/content/photo-3-mobile.jpg"
+                      srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Фото обустройства рабочего помещения">
+                </picture>
+                <h3 class = "life-organization__item-title">Работа</h3>
+                <p class="life-organization__item-text">
+                  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                  quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+                </p>
+                <a class = "life-organization__details-link button button--life-organization" href = "#">Подробнее</a>
+              </div>
+          </li>
+          <li class = "life-organization__item ">
+            <button class = "life-organization__item-button life-organization__item-button--research">
+              <span class = "life-organization__item-name">Исследования</span>
+            </button>
+            <div class = "life-organization__item-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1600px)"
+                    srcset="img/content/photo-3-desktop.webp, img/content/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 765px)"
+                    srcset="img/content/photo-3-tablet.webp, img/content/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp"
+                    srcset="img/content/photo-3-mobile.webp, img/content/photo-3-mobile@2x.webp 2x">
+                <source media="(min-width: 1600px)"
+                    srcset="img/content/photo-3-desktop.jpg, img/content/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 765px)"
+                    srcset="img/content/photo-3-tablet.jpg, img/content/photo-3-tablet.jpg 2x">
+                <img class="life-organization__item-image" src="img/content/photo-3-mobile.jpg"
+                    srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Фото лабораторного оборудования">
+              </picture>
+              <h3 class = "life-organization__item-title">Исследования</h3>
+              <p class="life-organization__item-text">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <p class="life-organization__item-text">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <a class = "life-organization__details-link button button--life-organization" href = "#">Подробнее</a>
+            </div>
+          </li>
+          <li class = "life-organization__item ">
+            <button class = "life-organization__item-button  life-organization__item-button--leisure">
+              <span class = "life-organization__item-name">Досуг</span>
+            </button>
+            <div class = "life-organization__item-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1600px)"
+                    srcset="img/content/photo-3-desktop.webp, img/content/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 765px)"
+                    srcset="img/content/photo-3-tablet.webp, img/content/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp"
+                    srcset="img/content/photo-3-mobile.webp, img/content/photo-3-mobile@2x.webp 2x">
+                <source media="(min-width: 1600px)"
+                    srcset="img/content/photo-3-desktop.jpg, img/content/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 765px)"
+                    srcset="img/content/photo-3-tablet.jpg, img/content/photo-3-tablet.jpg 2x">
+                <img class="life-organization__item-image" src="img/content/photo-3-mobile.jpg"
+                    srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Фото помещения для досуга">
+              </picture>
+              <h3 class = "life-organization__item-title">Досуг</h3>
+              <p class="life-organization__item-text">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <p class="life-organization__item-text">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <p class="life-organization__item-text">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <p class="life-organization__item-text">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <p class="life-organization__item-text">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <a class = "life-organization__details-link button button--life-organization" href = "#">Подробнее</a>
+            </div>
+          </li>
+          <li class = "life-organization__item ">
+            <button class = "life-organization__item-button life-organization__item-button--environment">
+              <span class = "life-organization__item-name">Окружающая среда</span>
+            </button>
+            <div class = "life-organization__item-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1600px)"
+                    srcset="img/content/photo-3-desktop.webp, img/content/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 765px)"
+                    srcset="img/content/photo-3-tablet.webp, img/content/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp"
+                    srcset="img/content/photo-3-mobile.webp, img/content/photo-3-mobile@2x.webp 2x">
+                <source media="(min-width: 1600px)"
+                    srcset="img/content/photo-3-desktop.jpg, img/content/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 765px)"
+                    srcset="img/content/photo-3-tablet.jpg, img/content/photo-3-tablet.jpg 2x">
+                <img class="life-organization__item-image" src="img/content/photo-3-mobile.jpg"
+                    srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Фото сада">
+              </picture>
+              <h3 class = "life-organization__item-title">Окружающая среда</h3>
+              <p class="life-organization__item-text">
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              </p>
+              <a class = "life-organization__details-link button button--life-organization" href = "#">Подробнее</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class = "page-main__about-flight about-flight">
+        <h2 class = "about-flight__title">Деньги приготовил. Когда&nbsp;вылетаем?</h2>
+        <div class = "about-flight__wrapper">
+          <div class = "about-flight__text">
+            <p class = "about-flight__paragraph">
+              Первый «частный» полёт на Марс осуществит в&nbsp;2018 году в беспилотном варианте корабль Dragon V2 с помощью&nbsp;тяжёлой ракеты Falcon Heavy.
+              После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и, вероятно, пилотируемая миссия через&nbsp;два&nbsp;года с достижением Марса в 2025 году.
+            </p>
+            <p class = "about-flight__paragraph">Для всех желающих открыты курсы подготовки.</p>
+            <p class = "about-flight__paragraph">За 40-100 ближайших лет на Марс планируется доставить до 1 млн. добровольцев.</p>
+          </div>
+          <a class = "about-flight__link link" href = "#">Критерии отбора</a>
+        </div>
+        <section class = "about-flight__subscription subscription">
+          <h3 class = "subscription__title">Будь в курсе новостей</h3>
+          <form class = "subscription__form form" action="#" method="GET">
+            <fieldset class = "form__field">
+              <label class = "visually-hidden" for = "user-name">Имя</label>
+              <input class = "form__input" id = "user-name" type = "text" name = "user-name" placeholder="Имя" required>
+              <label class = "visually-hidden" for = "user-email">E-mail</label>
+              <input class = "form__input" id = "user-email" type = "email" name = "user-email" placeholder="E-mail" required>
+              <button class = "form-button button button--form">Подписаться</button>
+            </fieldset>
+          </form>
+        </section>
+      </section>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <div class = "page-footer__wrapper">
+        <section class = "page-footer__social social">
+          <h2 class = "visually-hidden">О проекте в социальных сетях</h2>
+          <span class = "social__text">Следуйте за нами</span>
+          <ul class = "social__list">
+            <li class = "social__item">
+                <a class="social__link social__link--vk" href="#">
+                    <span class="visually-hidden">ВКонтакте</span>
+                    <svg class="social__icon social__icon--vk" width="35" height="35">
+                        <use xlink:href="img/sprite.svg#sprite-vk"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class = "social__item">
+                <a class="social__link social__link--tw" href="#">
+                    <span class="visually-hidden">Твиттер</span>
+                    <svg class="social__icon social__icon--tw" width="35" height="35">
+                        <use xlink:href="img/sprite.svg#sprite-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class = "social__item">
+                <a class="social__link social__link--fb" href="#">
+                    <span class="visually-hidden">Фейсбук</span>
+                    <svg class="social__icon social__icon--fb" width="35" height="35">
+                        <use xlink:href="img/sprite.svg#sprite-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class = "social__item">
+                <a class="social__link social__link--yt" href="#">
+                    <span class="visually-hidden">Ютуб</span>
+                    <svg class="social__icon social__icon--yt" width="35" height="32">
+                        <use xlink:href="img/sprite.svg#sprite-youtube"></use>
+                    </svg>
+                </a>
+            </li>
+          </ul>
+        </section>
+        <a class = "page-footer__link link link--footer" href = "#">Подробнее о проекте</a>
+
+        <a class="page-footer__logo logo logo--footer" href = "index.html" aria-label="Логотип проекта Panteon">
+          <svg class="logo__image" width="32" height="32">
+            <use xlink:href="img/sprite.svg#sprite-logo"></use>
+          </svg>
+          <div class = "logo__text-wrapper">
+            <span class = "logo__name-text">PANTHEON<span class = "logo__text">progect</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/svg4everybody.min.js"></script>
+  <script src="js/svg4everybody.legacy.min.js"></script>
+  <script>
+      svg4everybody()
+  </script>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/main.min.js"></script>
+
+</body>
+</html>
