@@ -154,7 +154,6 @@
 @media (min-width: 765px) {
   .features {
     width: 765px;
-    min-height: 1120px;
     padding-top: 70px;
     padding-bottom: 17px;
     padding-left: 23px;
@@ -182,6 +181,7 @@
     &__list {
       position: relative;
       width: 250px;
+      min-height: 320px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
