@@ -1,0 +1,46 @@
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// Text colors
+$base-text-color: #4c4c4c;
+$companion1-text-color: #ffffff;
+$companion2-text-color: #e12457;
+$companion3-text-color: #ffcfdf;
+$companion4-text-color: #000000;
+$companion5-text-color: #c2529a;
+$companion6-text-color: #908bb1;
+
+
+// Backgrounds colors
+$base-bg-color:  #ffffff;
+$companion1-bg-color: #000000;
+$companion2-bg-color: #666666;
+$companion3-bg-color: #b2b2b2;
+$companion4-bg-color: #e12457;
+$companion5-bg-color: rgba(179, 30, 95, 0.5);
+$companion6-bg-color: #ffcfdf;
+$companion7-bg-color: #fff5f8;
+$companion8-bg-color: #fbd6e0;
+$companion9-bg-color: rgba(179, 30, 95, 0.3);
+$companion10-bg-color: rgba(179, 30, 95, 0.8);
+
+
+// Links colors
+$link-color: #000000;
+$link-focus-color: #666666;
+$link-active-color: #b2b2b2;
+
+
+
+
+
+
+// Borders
+$base-border: 3px solid #e12457;
+
+
+@mixin pseudo-element ($content: "", $display:block, $pos:absolute) {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
