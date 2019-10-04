@@ -260,7 +260,7 @@
       flex-direction: row;
 
       width: 719px;
-      // min-height: 730px;
+
       padding-top: 10px;
       padding-left: 0px;
 
@@ -302,10 +302,11 @@
     &__item {
       padding-top: 35px;
       margin-bottom: 0;
-      margin-right: 50px;
+      margin-right: 70px;
+      margin-left: -20px;
 
       &:first-child {
-        margin-left: -20px;
+        margin-right: 50px;
       }
 
       &:last-child {
@@ -373,6 +374,10 @@
     &__item--open &__item-name {
       width: 170px;
       padding-top: 15px;
+    }
+
+    &__item--open &__item-button--environment {
+      margin-bottom: 31px;
     }
 
     &__item--open &__item-button--environment &__item-name {
