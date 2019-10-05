@@ -11,18 +11,7 @@
     font-weight: 300;
     color: $base-text-color;
 
-
-
-
-
-
     background-color: $base-bg-color;
-
-
-    // background-image: url("../img/Panteon\ 320.jpg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    // opacity: 0.6;
 }
 
 a {
@@ -32,7 +21,6 @@ a {
 @media (min-width: 765px) {
     .page {
         width: 765px;
-        // background-image: url("../img/Panteon\ 750.jpg");
     }
 }
 
@@ -40,6 +28,5 @@ a {
 @media (min-width: 1600px) {
     .page {
         width: 1600px;
-        // background-image: url("../img/Panteon\ 1170.jpg");
     }
 }

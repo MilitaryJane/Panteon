@@ -1525,7 +1525,7 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 320px;
-  padding: 55px 69px 35px 69px;
+  padding: 55px 0 35px 0;
   background-color: #000000;
   color: #ffffff;
   background-image: url("../img/substrate-5-mobile.jpg");
@@ -1536,6 +1536,8 @@ img {
     .page-footer {
       background-image: url("../img/substrate-5-mobile@2x.jpg");
       background-size: 320px cover; } }
+  .page-footer__wrapper {
+    margin-left: 54px; }
   .page-footer__social {
     margin-bottom: 27px; }
   .page-footer__link {
@@ -1690,9 +1692,7 @@ img {
   line-height: 24px;
   font-weight: 300;
   color: #4c4c4c;
-  background-color: #ffffff;
-  background-position: 0 0;
-  background-repeat: no-repeat; }
+  background-color: #ffffff; }
 
 a {
   text-decoration: none; }
