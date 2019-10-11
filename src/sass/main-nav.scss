@@ -1,11 +1,12 @@
 @import "_style-lib.scss";
 
 .main-nav {
-  width: 290px;
+  // width: 290px;
+  width: 100%;
   padding-top: 20px;
 
   &__wrapper {
-    width: 290px;
+    // width: 290px;
     display: flex;
     justify-content: space-between;
   }
@@ -26,12 +27,13 @@
 
 @media (min-width: 765px) {
   .main-nav {
-    width: 719px;
+    // width: 719px;
+    width: 100%;
     padding-top: 25px;
 
-    &__wrapper {
-      width: 719px;
-    }
+    // &__wrapper {
+    //   // width: 719px;
+    // }
 
     &__promo {
       margin-top: 190px;
@@ -42,13 +44,14 @@
 
 @media (min-width: 1600px) {
   .main-nav {
-    width: 1140px;
+    // width: 1140px;
+    width: 100%;
     padding-top: 36px;
 
-    &__wrapper {
-      width: 1140px;
+    // &__wrapper {
+    //   // width: 1140px;
 
-    }
+    // }
     &__promo {
       margin-top: 180px;
     }
