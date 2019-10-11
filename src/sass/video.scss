@@ -1,9 +1,12 @@
 @import "_style-lib.scss";
 
 .video {
-  width: 214px;
-  height: 138px;
-
+  // position: relative;
+  padding-bottom: 47.75%;
+  // width: 214px;
+  // height: 138px;
+  width: 73.80%;
+  height: 0;
   box-shadow: -1px 25px 54px 11px rgba(0,0,0,0.48);
 
   &--features {
@@ -16,8 +19,10 @@
   &__image-wrapper {
     position: relative;
 
-    width: 214px;
-    height: 138px;
+    // width: 214px;
+    // height: 138px;
+    width: 100%;
+    height: auto;
 
     &--close {
       display: none;
@@ -30,9 +35,13 @@
   }
 
   &__image {
+    display: none;
     position: relative;
-    width: 214px;
-    height: 138px;
+    // width: 214px;
+    // height: 138px;
+
+    width: 100%;
+    height: auto;
 
     &--features {
       width: 291px;
@@ -44,7 +53,10 @@
     position: absolute;
 
     top: 45px;
-    left: 80px;
+    top: 37%;
+
+    // left: 80px;
+    left: 40%;
     width: 52px;
     height: 52px;
 
@@ -95,10 +107,14 @@
   }
 
   &__video-content {
-    display: none;
+    // display: none;
 
-    width: 214px;
-    height: 138px;
+    // width: 214px;
+    // height: 138px;
+
+    width: 100%;
+    height: auto;
+    min-height: 138px;
 
     &--open {
       display: block;
