@@ -3,6 +3,7 @@
 .site-list {
   display: none;
   position: absolute;
+  right: 4.68%;
 
   flex-wrap: wrap;
 
@@ -29,8 +30,11 @@
         width: 94px;
         padding: 15px 5px;
 
-        font-size: 13px;
-        line-height: 25px;
+        // font-size: 13px;
+        font-size: 80.25%;
+        // line-height: 25px;
+        line-height: 192.31%;
+
         font-weight: 700;
         text-align: center;
 
@@ -63,13 +67,15 @@
 
 @media (min-width: 765px) {
   .site-list {
-    margin-left: 427px;
+    // margin-left: 427px;
+    right: 3%;
   }
 }
 
 
 @media (min-width: 1600px) {
   .site-list {
-    margin-left: 850px;
+    // margin-left: 850px;
+    right: 14.38%;
   }
 }
