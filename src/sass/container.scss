@@ -1,18 +1,21 @@
 .container {
-    width: 290px;
+    // width: 290px;
+    width: 90.63%;
     margin: 0 auto;
 
 }
 
 @media (min-width: 765px) {
     .container {
-        width: 719px;
+        // width: 719px;
+        width: 93.99%;
     }
 }
 
 
 @media (min-width: 1600px) {
     .container {
-        width: 1140px;
+        // width: 1140px;
+        width: 71.25%;
     }
 }
