@@ -21,7 +21,6 @@
   &__name-text,
   &__text {
     display: inline-block;
-    width: 96px;
     padding: 0;
     margin: 0;
 
@@ -29,14 +28,18 @@
   }
 
   &__name-text {
-    font-size: 16.8px;
-    line-height: 13px;
+    // font-size: 16.8px;
+    font-size: 100%;
+    // line-height: 13px;
+    line-height: 81.25%;
     font-weight: 600;
   }
 
   &__text {
-    font-size: 12.6px;
-    line-height: 13px;
+    // font-size: 12.6px;
+    font-size: 78.75%;
+    // line-height: 13px;
+    line-height: 81.25%;
     font-weight: 100;
   }
 
@@ -87,7 +90,7 @@
 
 @media (min-width: 765px) {
   .logo {
-    width: 175px;
+    width: 195px;
     height: 48px;
 
     &__image {
@@ -96,18 +99,21 @@
     }
 
     &__text-wrapper {
-      width: 115px;
-      padding-top: 8px;
+      width: 125px;
+      padding-top: 4px;
     }
 
     &__name-text,
     &__text {
-      width: 115px;
+      width: 125px;
     }
 
     &__name-text {
-      font-size: 21px;
-      line-height: 16px;
+      // font-size: 21px;
+      font-size: 131.25%;
+      // line-height: 16px;
+      line-height: 100%;
+
     }
 
     &--footer {
