@@ -1,8 +1,10 @@
 @import "_style-lib.scss";
 
 .promo {
+  box-sizing: border-box;
   position: relative;
   // width: 290px;
+  padding-bottom: 20px;
 
   &__caption {
     box-sizing: border-box;
@@ -57,23 +59,7 @@
 
   &__video {
     margin: 0 auto;
-    margin-bottom: 82px;
-  }
-
-  &__slogan {
-    position: absolute;
-    width: 113px;
-
-    // left: 128px;
-    left: 44.14%;
-    top: 265px;
-
-    // font-size: 12px;
-    font-size: 75%;
-    // line-height: 17px;
-    line-height: 141.67%;
-    font-weight: 300;
-    color: $companion3-text-color
+    margin-bottom: 60px;
   }
 
   &__link {
@@ -84,6 +70,7 @@
 
     margin: 0 auto;
     padding: 0;
+
 
     border-radius: 50%;
 
@@ -132,7 +119,7 @@
 
 @media (min-width: 765px) {
   .promo {
-    width: 719px;
+    // width: 719px;
 
     &__caption {
       width: 485px;
@@ -197,13 +184,6 @@
       margin-bottom: 60px;
     }
 
-    &__slogan {
-      left: 462px;
-      top: 475px;
-
-      font-weight: 400;
-    }
-
     &__link {
       width: 75px;
       height: 75px;
@@ -233,7 +213,7 @@
 
 @media (min-width: 1600px) {
   .promo {
-    width: 1140px;
+    // width: 1140px;
 
     &__caption {
       width: 610px;
@@ -276,23 +256,6 @@
 
     &__video {
       margin-bottom: 25px;
-    }
-
-    &__slogan {
-      left: 917px;
-      top: 340px;
-
-      &::before {
-        @include pseudo-element;
-
-        width: 118px;
-        height: 1px;
-
-        top: 33px;
-        left: -142px;
-
-        background-color: $companion6-bg-color;
-      }
     }
 
     &__link {
