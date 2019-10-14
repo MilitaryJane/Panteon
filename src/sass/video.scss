@@ -1,13 +1,12 @@
 @import "_style-lib.scss";
 
 .video {
-  // position: relative;
-  padding-bottom: 47.75%;
+  position: relative;
+  padding-bottom: 47.59%;
   // width: 214px;
   // height: 138px;
   width: 73.80%;
   height: 0;
-  box-shadow: -1px 25px 54px 11px rgba(0,0,0,0.48);
 
   &--features {
     width: 291px;
@@ -24,6 +23,8 @@
     width: 100%;
     height: auto;
 
+    box-shadow: -1px 25px 54px 11px rgba(0,0,0,0.48);
+
     &--close {
       display: none;
     }
@@ -35,7 +36,7 @@
   }
 
   &__image {
-    display: none;
+    display: block;
     position: relative;
     // width: 214px;
     // height: 138px;
@@ -52,11 +53,11 @@
   &__play-button {
     position: absolute;
 
-    top: 45px;
+    // top: 45px;
     top: 37%;
 
     // left: 80px;
-    left: 40%;
+    left: 39%;
     width: 52px;
     height: 52px;
 
@@ -106,15 +107,32 @@
     display: none;
   }
 
+  &__slogan {
+    position: absolute;
+    width: 113px;
+
+    // left: 128px;
+    left: 44.14%;
+    // top: 265px;
+    top: 80.34%;
+
+    // font-size: 12px;
+    font-size: 75%;
+    // line-height: 17px;
+    line-height: 141.67%;
+    font-weight: 300;
+    color: $companion3-text-color
+  }
+
   &__video-content {
-    // display: none;
+    display: none;
 
     // width: 214px;
     // height: 138px;
 
     width: 100%;
     height: auto;
-    min-height: 138px;
+    // min-height: 138px;
 
     &--open {
       display: block;
@@ -131,8 +149,10 @@
 
 @media (min-width: 765px) {
   .video {
-    width: 515px;
-    height: 259px;
+    // width: 515px;
+    width: 67.32%;
+    // height: 259px;
+    padding-bottom: 36%;
 
     &--features {
       width: 718px;
@@ -140,8 +160,8 @@
     }
 
     &__image-wrapper {
-      width: 515px;
-      height: 259px;
+      // width: 515px;
+      // height: 259px;
 
       &--features {
         width: 718px;
@@ -150,9 +170,6 @@
     }
 
     &__image {
-      width: 515px;
-      height: 259px;
-
       &--features {
         width: 718px;
         height: 361px;
@@ -162,8 +179,10 @@
     &__play-button {
       width: 191px;
 
-      top: 104px;
-      left: 158px;
+      // top: 104px;
+      top: 40%;
+      // left: 158px;
+      left: 25%;
 
       &--features {
         width: 52px;
@@ -192,14 +211,25 @@
     &__play-button:active .video__play-button-text {
       text-shadow: $base-bg-color 0 0 5px;
     }
+
+    &__slogan {
+      // left: 462px;
+      left: 70.26%;
+      // top: 475px;
+      top: 80.09%;
+
+      font-weight: 400;
+    }
   }
 }
 
 
 @media (min-width: 1600px) {
   .video {
-    width: 582px;
-    height: 292px;
+    // width: 582px;
+    width: 51.05%;
+    // height: 292px;
+    padding-bottom: 25.61%;
 
     &--features {
       width: 1139px;
@@ -207,8 +237,8 @@
     }
 
     &__image-wrapper {
-      width: 582px;
-      height: 292px;
+      // width: 582px;
+      // height: 292px;
 
       &--features {
         width: 1139px;
@@ -217,8 +247,8 @@
     }
 
     &__image {
-      width: 582px;
-      height: 292px;
+      // width: 582px;
+      // height: 292px;
 
       &--features {
         width: 1139px;
@@ -227,12 +257,34 @@
     }
 
     &__play-button {
-      top: 118px;
-      left: 190px;
+      // top: 118px;
+      // left: 190px;
+      top: 40%;
+      left: 30%;
 
       &--features {
         top: 258px;
         left: 543px;
+      }
+    }
+
+    &__slogan {
+      // left: 917px;
+      // top: 340px;
+
+      left: 110%;
+      top: 45%;
+
+      &::before {
+        @include pseudo-element;
+
+        width: 118px;
+        height: 1px;
+
+        top: 33px;
+        left: -142px;
+
+        background-color: $companion6-bg-color;
       }
     }
   }
