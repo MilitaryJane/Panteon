@@ -2,10 +2,9 @@
 
 .info {
   box-sizing: border-box;
-  width: 320px;
+  // width: 320px;
 
-  padding: 35px 0;
-  padding-left: 15px;
+  padding: 35px 5.17%;
 
   background-color: $companion7-bg-color;
 
@@ -89,8 +88,10 @@
 
 @media (min-width: 765px) {
   .info {
-    width: 765px;
-    padding: 40px 23px;
+    // width: 765px;
+    padding: 40px 3.2%;
+    // padding-left: 5.17%;
+    // padding-right: 5.17%;
 
 
     &__item {
@@ -120,64 +121,12 @@
 
 @media (min-width: 1600px) {
   .info {
-    width: 1600px;
-    padding: 43px 230px;
-
-
-    // &__item {
-    //   &--value td:nth-child(2)::before {
-    //     left: -12px;
-    //   }
-
-    //   &--value td:nth-child(5)::before {
-    //     left: 5px;
-    //   }
-
-    //   &--value td:nth-child(6)::before {
-    //     left: 29px;
-    //   }
-    // }
+    // width: 1600px;
+    padding: 43px 20.18%;
 
     &__subitem {
       width: 215px;
     }
-
-    // &__subitem--distance {
-    //   padding-left: 0;
-    //   padding-right: 33px;
-    // }
-
-    // &__subitem--size {
-    //   width: 195px;
-    //   padding-left: 28px;
-    //   padding-right: 15px;
-    // }
-
-    // &__subitem--weight {
-    //   width: 225px;
-    //   padding-left: 43px;
-    //   padding-right: 15px;
-    // }
-
-    // &__subitem--sputnik {
-    //   width: 195px;
-    //   padding-left: 43px;
-    //   padding-right: 30px;
-    // }
-
-    // &__subitem--mountain{
-    //   display: block;
-    //   width: 195px;
-    //   padding-left: 45px;
-    //   padding-right: 15px;
-    // }
-
-    // &__subitem--temperature {
-    //   display: block;
-    //   width: 165px;
-    //   padding-left: 68px;
-    //   padding-right: 0px;
-    // }
   }
 }
 
