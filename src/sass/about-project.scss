@@ -21,7 +21,7 @@
 
   &__quote {
     position: relative;
-    width: 290px;
+    width: 100%;
     padding: 0;
     padding-top: 23px;
     margin: 0;
@@ -47,10 +47,13 @@
   }
   &__photo-wrapper {
     position: relative;
+    width: 200px;
+
+    margin: 0 auto;
     &::before {
       @include pseudo-element;
       top: 0;
-      left: 75px;
+      left: 35px;
 
       box-sizing: border-box;
       width: 165px;
@@ -63,7 +66,7 @@
 
   &__photo {
     position: relative;
-    padding-left: 42px;
+// padding-left: 42px;
     padding-top: 33px;
 
     width: 165px;
@@ -76,10 +79,11 @@
 @media (min-width: 765px) {
   .about-project{
     position: relative;
-    width: 719px;
+    // width: 719px;
     display: flex;
 
     flex-wrap: wrap;
+    justify-content: space-between;
 
     &__title {
       margin-bottom: 50px;
@@ -90,7 +94,8 @@
     }
 
     &__text {
-      margin-bottom: 68px;
+      // margin-bottom: 68px;
+      margin-bottom: 9.46%;
       align-self: flex-start;
 
       &:last-child {
@@ -99,8 +104,11 @@
     }
 
     &__quote {
-      width: 478px;
-      margin-top: -68px;
+      // width: 478px;
+      width: 66.48%;
+      max-width: 600px;
+      // margin-top: -68px;
+      margin-top: -9.46%;
       margin-bottom: 25px;
 
     }
@@ -110,7 +118,7 @@
 
 @media (min-width: 1600px) {
   .about-project{
-    width: 1140px;
+    // width: 1140px;
     padding-top: 75px;
 
 
@@ -119,19 +127,22 @@
     }
 
     &__text {
-      margin-bottom: 260px;
+      // margin-bottom: 260px;
+      margin-bottom: 22.81%;
 
       &:last-child {
-        margin-top: -150px;
+        // margin-top: -150px;
+        margin-top: -13.16%;
         margin-bottom: 0px;
       }
     }
 
     &__photo-wrapper {
       margin-top: -53px;
+      width: 380px;
 
       &::before {
-        left: 93px;
+        left: 50px;
 
         width: 325px;
         height: 373px;
@@ -148,8 +159,10 @@
 
     &__quote {
       align-self: flex-start;
-      width: 710px;
-      margin-top: -260px;
+      // width: 710px;
+      width: 62.28%;
+      // margin-top: -260px;
+      margin-top: -22.81%;
       margin-bottom: 37px;
 
       &::before {
