@@ -10,32 +10,42 @@
   }
 
   &__wrapper {
-    width: 320px;
+    // width: 320px;
+    // box-sizing: border-box;
+    width: 100%;
     min-height: 650px;
-    margin-left: -15px;
+    margin-left: -5.17%;;
+    margin-right: -5.17%;;
     margin-top: -144px;
+
+    padding: 0 5.17%;
 
     background-color: $companion1-bg-color;
     color: $companion1-text-color;
 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
     background-image: url("../img/substrate-1-mobile.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
         background-image: url("../img/substrate-1-mobile@2x.jpg");
-        background-size: 320px auto;
+        background-size: cover;
     }
   }
 
   &__title {
-    width: 290px;
+    // width: 290px;
+    width: 100%;
 
     padding: 0;
     padding-top: 182px;
     margin: 0;
-    margin-left: 15px;
     margin-bottom: 25px;
 
     font-size: 21px;
@@ -44,11 +54,13 @@
   }
 
   &__text {
-    width: 290px;
+    // width: 290px;
+    width: 100%;
+    // max-width: 350px;
 
     padding: 0;
     margin: 0;
-    margin-left: 15px;
+    // margin-left: 15px;
     margin-bottom: 37px;
 
     font-size: 14px;
@@ -57,8 +69,10 @@
   }
 
   &__slogan {
-    width: 218px;
-    margin-left: 15px;
+    // width: 218px;
+    width: 100%;
+    margin: 0;
+    // margin-left: 15px;
     margin-bottom: 47px;
   }
 
@@ -91,7 +105,7 @@
   }
 
   &__button {
-    margin-left: 15px;
+    margin: 0 auto;
   }
 }
 
@@ -109,12 +123,12 @@
     }
 
     &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      width: 719px;
+      // width: 719px;
+      width: 100%;
       min-height: 376px;
-      margin-left: 0px;
+      margin: 0;
       margin-top: -207px;
+      padding:0;
 
       background-image: url("../img/substrate-1-tablet.jpg");
 
@@ -122,12 +136,13 @@
       @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
           background-image: url("../img/substrate-1-tablet@2x.jpg");
-          background-size: 719px auto;
+          // background-size: 719px auto;
       }
     }
 
     &__title {
-      width: 306px;
+      // width: 306px;
+      width: 50%;
 
       padding-top: 48px;
       margin-left: 383px;
@@ -135,7 +150,8 @@
     }
 
     &__text {
-      width: 306px;
+      // width: 306px;
+      width: 50%;
 
       margin-left: 383px;
       margin-bottom: 32px;
@@ -145,28 +161,34 @@
       display: flex;
       justify-content: space-between;
 
-      width: 437px;
-      margin-left: 30px;
+      // width: 437px;
+      width: 60.78%;
+      max-width: 600px;
+
+      // margin-left: 30px;
+      margin-left: 4.17%;
       margin-bottom: 30px;
-      margin-right: 20px;
+      // margin-right: 20px;
+      margin-right: 2.78%;
     }
 
     &__price {
       width: 200px;
-
+      // width: 27.82%;
       margin-bottom: 0;
     }
 
     &__slogan-text {
       align-self: flex-start;
       width: 220px;
+      // width: 220px;
       margin-bottom: 0;
 
     }
 
-    &__button {
-      margin-left: 0;
-    }
+    // &__button {
+    //   margin-left: 0;
+    // }
 
   }
 }
@@ -184,7 +206,7 @@
     }
 
     &__wrapper {
-      width: 1140px;
+      // width: 1140px;
       min-height: 308px;
       margin-top: -280px;
 
@@ -194,12 +216,13 @@
       @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
           background-image: url("../img/substrate-1-desktop@2x.jpg");
-          background-size: 1140px auto;
+          // background-size: 1140px auto;
       }
     }
 
     &__title {
-      width: 610px;
+      // width: 610px;
+      width: 53.51%;
 
       padding-top: 55px;
       margin-bottom: 5px;
@@ -207,7 +230,8 @@
     }
 
     &__text {
-      width: 610px;
+      // width: 610px;
+      width: 53.51%;
 
       margin-left: 400px;
       margin-bottom: 10px;
@@ -235,9 +259,9 @@
 
     }
 
-    &__button {
-      margin-left: 0;
-    }
+    // &__button {
+    //   margin-left: 0;
+    // }
   }
 
 }
