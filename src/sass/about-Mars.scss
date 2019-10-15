@@ -3,9 +3,10 @@
 .about-Mars{
   padding-top: 36px;
 
-  width: 290px;
+  // width: 290px;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
+  flex-wrap: wrap;
 
   &__title {
     margin: 0;
@@ -31,14 +32,17 @@
 
 @media (min-width: 765px) {
   .about-Mars{
-    width: 719px;
+    // width: 719px;
     padding-top: 65px;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
 
     &__title {
       margin-bottom: 52px;
+    }
+
+    &__column {
+      width: 48%;
+      // margin-bottom: 5px;
     }
 
     &__text {
@@ -47,6 +51,7 @@
 
     &__illustration  {
       margin-top: -109px;
+      // margin-top: -15.16%;
     }
   }
 }
@@ -54,11 +59,17 @@
 
 @media (min-width: 1600px) {
   .about-Mars{
-    width: 988px;
+    // width: 988px;
     padding-top: 88px;
+
+    &__column {
+      width: 40.61%;
+      // margin-bottom: 5px;
+    }
 
     &__illustration  {
       margin-top: -352px;
+      // margin-top: -30.88%;
     }
   }
 }
