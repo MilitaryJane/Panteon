@@ -5,7 +5,7 @@
   padding-bottom: 67px;
 
   &__title {
-    width: 290px;
+    // width: 290px;
 
     padding: 0;
     margin: 0;
@@ -23,9 +23,11 @@
     display: flex;
     flex-direction: column;
 
-    width: 290px;
+    // width: 290px;
+    width: 100%;
     padding: 0;
-    padding-left: 24px;
+    // padding-left: 24px;
+    padding-left: 8.28%;
     margin: 0;
 
     list-style: none;
@@ -76,6 +78,7 @@
     position: relative;
     display: block;
     width: 65px;
+    width: 72.22%;
     min-height: 45px;
 
     padding: 0;
