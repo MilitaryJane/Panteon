@@ -1,7 +1,8 @@
 @import "_style-lib.scss";
 
 .title {
-  width: 290px;
+  // width: 290px;
+  width: 92%;
   padding: 0;
 
   font-size: 32px;
@@ -13,7 +14,7 @@
 
 @media (min-width: 765px) {
   .title {
-    width: 719px;
+    // width: 719px;
 
     font-size: 42px;
   }
@@ -22,7 +23,8 @@
 
 @media (min-width: 1600px) {
   .title {
-    width: 925px;
+    // width: 925px;
+    width: 81.14%;
 
     font-size: 55px;
     line-height: 55px;
