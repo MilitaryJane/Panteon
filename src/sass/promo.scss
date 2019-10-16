@@ -4,15 +4,20 @@
   box-sizing: border-box;
   position: relative;
   // width: 290px;
+  width: 100%;
   padding-bottom: 20px;
 
   &__caption {
     box-sizing: border-box;
-    width: 208px;
+    max-width: 385px;
+    // width: 71.72%;
 
     margin: 0 auto;
     margin-bottom:  35px;
     text-transform: uppercase;
+    text-align: center;
+
+    word-break: break-all;
   }
 
   &__text1,
@@ -20,23 +25,21 @@
   &__text3 {
     display: inline-block;
     padding: 0;
-    margin: 0;
 
     // font-size: 11.5px;
-    font-size: 71.88%;
+    font-size: 0.72rem;
     // line-height: 13px;
-    line-height: 110%;
-
+    line-height: 0.81rem;
   }
 
   &__text1 {
-    width: 134px;
+    // width: 134px;
 
     font-weight: 100;
   }
 
   &__text2 {
-    width: 65px;
+    // width: 65px;
 
     margin-bottom: 8px;
 
@@ -44,11 +47,11 @@
   }
 
   &__text3 {
-    width: 208px;
+    // width: 208px;
     // font-size: 63px;
-    font-size: 393.65%;
+    font-size: 3.67rem;
     // line-height: 70px;
-    line-height: 111%;
+    line-height: 4.38rem;
     font-weight: 900;
   }
 
@@ -122,33 +125,32 @@
     // width: 719px;
 
     &__caption {
-      width: 485px;
+      max-width: 940px;
       margin-bottom:  65px;
-
     }
 
     &__text1,
     &__text2,
     &__text3 {
 
-      font-size: 27px;
-      line-height: 27px;
+      font-size: 1.69rem;
+      line-height: 1.69rem;
     }
 
-    &__text1 {
-      width: 308px;
-    }
+    // &__text1 {
+    //   // width: 308px;
+    // }
 
     &__text2 {
-      width: 149px;
+      // width: 149px;
 
       margin-bottom: 5px;
     }
 
     &__text3 {
-      width: 485px;
-      font-size: 150px;
-      line-height: 150px;
+      // width: 485px;
+      font-size: 9.10rem;
+      line-height: 9.38rem;
     }
 
     &__decor-text1,
@@ -216,7 +218,7 @@
     // width: 1140px;
 
     &__caption {
-      width: 610px;
+      max-width: 900px;
       margin-bottom:  12px;
 
     }
@@ -224,24 +226,28 @@
     &__text1,
     &__text2,
     &__text3 {
-      font-size: 33px;
-      line-height: 33px;
+      // font-size: 33px;
+      // line-height: 33px;
+      font-size: 2.06rem;
+      line-height: 2.06rem;
     }
 
-    &__text1 {
-      width: 385px;
-    }
+    // &__text1 {
+    //   // width: 385px;
+    // }
 
     &__text2 {
-      width: 215px;
+      // width: 215px;
 
       margin-bottom: 0px;
     }
 
     &__text3 {
-      width: 610px;
-      font-size: 185px;
-      line-height: 185px;
+      // width: 610px;
+      // font-size: 185px;
+      // line-height: 185px;
+      font-size: 11.56rem;
+      line-height: 11.56rem;
     }
 
     &__decor-text1 {
