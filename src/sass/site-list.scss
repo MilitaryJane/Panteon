@@ -7,7 +7,10 @@
 
   flex-wrap: wrap;
 
-  width: 290px;
+  // width: 290px;
+  width: 90.63%;
+  min-height: 68px;
+
   margin: 0;
   padding: 0;
 
@@ -17,6 +20,8 @@
   word-break: break-all;
 
   &__item {
+    width: 32.41%;
+
     border-right: $base-border;
     align-self: center;
 
@@ -27,13 +32,16 @@
     &-link {
         display: block;
         box-sizing: border-box;
-        width: 94px;
+        // width: 94px;
+
         padding: 15px 5px;
+        margin: auto;
 
         // font-size: 13px;
-        font-size: 80.25%;
+        font-size: 0.81rem;
+
         // line-height: 25px;
-        line-height: 192.31%;
+        line-height: 1.5rem;
 
         font-weight: 700;
         text-align: center;
@@ -67,6 +75,7 @@
 
 @media (min-width: 765px) {
   .site-list {
+    width: 93.99%;
     // margin-left: 427px;
     right: 3%;
   }
@@ -75,6 +84,7 @@
 
 @media (min-width: 1600px) {
   .site-list {
+    width: 71.25%;
     // margin-left: 850px;
     right: 14.38%;
   }
