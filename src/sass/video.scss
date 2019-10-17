@@ -117,8 +117,15 @@
       display: block;
     }
   }
-}
 
+
+  &--no-js &__image-wrapper {
+    display: none;
+  }
+  &--no-js &__video-content {
+    display: block;
+  }
+}
 
 
 @media (min-width: 765px) {
