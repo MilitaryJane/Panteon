@@ -2,7 +2,6 @@
 
 .features {
   box-sizing: border-box;
-  // width: 320px;
   padding-top: 56px;
   padding-bottom: 17px;
   padding-left: 5.17%;;
@@ -19,7 +18,6 @@
   @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
       background-image: url("../img/substrate-2-mobile@2x.jpg");
-      // background-size: 320px cover;
   }
 
   &__title {
@@ -27,7 +25,6 @@
     margin: 0;
     margin-bottom: 43px;
 
-    // width: 237px;
     width: 90%;
 
     font-size: 32px;
@@ -36,20 +33,24 @@
   }
 
   &__video {
-    margin-bottom: 45px
+    margin-bottom: 45px;
   }
 
   &__list {
-    // width: 290px;
     padding: 0;
     margin: 0;
 
     list-style: none;
   }
 
+  &__list--no-js &__item--open &__answer {
+    position: inherit;
+  }
+
   &__list--no-js &__question {
     display: none;
   }
+
 
   &__list--no-js &__answer,
   &__list--no-js &__answer-title {
@@ -57,8 +58,8 @@
   }
 
   &__list--no-js &__answer-title {
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 1.38rem;
+    line-height: 1.38rem;
     font-weight: 700;
   }
 
@@ -155,7 +156,6 @@
 
 @media (min-width: 765px) {
   .features {
-    // width: 765px;
     padding-top: 70px;
     padding-bottom: 17px;
     padding-left: 3.2%;
@@ -167,25 +167,19 @@
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
         background-image: url("../img/substrate-2-tablet@2x.jpg");
-        // background-size: 765px cover;
     }
 
     &__title {
-      // width: 530px;
-      // width: 73.71%;
-
       font-size: 44px;
       line-height: 55px;
     }
 
     &__video {
-      margin-bottom: 60px
+      margin-bottom: 60px;
     }
 
     &__list {
       position: relative;
-      // width: 250px;
-      // width: 34.77%;
 
       min-height: 320px;
       display: flex;
@@ -209,8 +203,6 @@
 
 
     &__answer {
-      // width: 437px;
-      // width: 175%;
       padding-top: 0px;
       padding-bottom: 25px;
     }
@@ -230,7 +222,6 @@
     &__item--open &__answer {
       position: absolute;
       top: 0;
-      // left: 290px;
       left: 40.33%;
     }
 
@@ -263,7 +254,6 @@
 
 @media (min-width: 1600px) {
   .features {
-    // width: 1600px;
     min-height: 1259px;
     padding-top: 105px;
     padding-left: 20.18%;
@@ -275,13 +265,10 @@
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
         background-image: url("../img/substrate-2-desktop@2x.jpg");
-        // background-size: 1600px cover;
     }
 
 
     &__title {
-      // width: 1140px;
-
       margin-bottom: 60px;
 
       font-size: 51px;
@@ -293,7 +280,6 @@
     }
 
     &__item--open &__answer {
-      // left: 290px;
       left: 25.44%;
     }
   }
