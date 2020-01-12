@@ -1730,11 +1730,6 @@ img {
 a {
   text-decoration: none; }
 
-@media (min-width: 765px) {
-  .page {
-    font-size: 16px;
-    line-height: 24px; } }
-
 .promo {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
