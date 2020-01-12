@@ -205,7 +205,7 @@
           <h2 class = "flight-cost__title">Стоимость перелета</h2>
           <div class  = "flight-cost__text">
             Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов.
-            Маск стремится сократить эту цифру в 20 000 раз, что составит <b>500 000 долларов</b> на человека.
+            Маск&nbsp;стремится сократить эту цифру в 20 000 раз, что составит <b>500 000 долларов</b> на человека.
           </div>
           <div class = "flight-cost__slogan">
             <span class = "flight-cost__price">$500 k</span>
@@ -235,7 +235,8 @@
             </picture>
             <button class="video__play-button video__play-button--features" aria-label="Воспроизвести"></button>
           </div>
-            <video class="video__video-content" src="video/video1.mp4" width="291" height="172" controls></video>
+            <!-- <video class="video__video-content" src="video/video1.mp4" width="291" height="172" controls></video> -->
+            <iframe class="video__video-content" src="https://www.youtube.com/embed/2BOwSOU150g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  controls></iframe>
         </div>
 
         <ul class = "features__list features__list--no-js">
@@ -265,7 +266,7 @@
                   Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
                 </p>
 
-                <p class = "features__paragraph">
+                <!-- <p class = "features__paragraph">
                   Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов,
                   а минимальная температура опускается до -140 градусов по Цельсию.
                   Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких&nbsp;часов до нескольких месяцев.
@@ -294,7 +295,7 @@
                   На планете отсутствует магнитное поле,&nbsp;поэтому радиационный фон повышен.
                   А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным.
                   Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
-                </p>
+                </p> -->
             </div>
           </li>
           <li class = "features__item">
@@ -574,7 +575,7 @@
               <input class = "form__input" id = "user-name" type = "text" name = "user-name" placeholder="Имя" required>
               <label class = "visually-hidden" for = "user-email">E-mail</label>
               <input class = "form__input" id = "user-email" type = "email" name = "user-email" placeholder="E-mail" required>
-              <button class = "form-button button button--form">Подписаться</button>
+              <button class = "form__button button button--form">Подписаться</button>
             </fieldset>
           </form>
         </section>
@@ -642,7 +643,8 @@
       svg4everybody();
   </script>
   <script src="js/picturefill.min.js"></script>
-  <!-- <script src="js/main.min.js"></script> -->
+  <script src="js/main.min.js"></script>
+  <!-- <script src="js/video_controls.js"></script> -->
 
 </body>
 </html>

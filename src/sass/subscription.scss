@@ -2,13 +2,10 @@
 
 .subscription{
   box-sizing: border-box;
-  width: 320px;
+  // width: 320px;
   min-height: 397px;
-  padding-top: 55px;
-  padding-bottom: 64px;
-  padding-left: 29px;
-  margin-left: -15px;
-
+  padding: 55px 10% 64px;
+  margin: 0 -5.17%;
 
   background-color: $companion1-bg-color;
   color: $companion1-text-color;
@@ -29,13 +26,12 @@
     margin: 0;
     margin-bottom: 18px;
 
-    width: 290px;
+    width: 100%;
 
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     font-weight: bold;
   }
-
 }
 
 

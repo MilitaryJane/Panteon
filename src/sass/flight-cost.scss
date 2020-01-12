@@ -7,25 +7,25 @@
   &__photo {
     width: 289px;
     height: 289px;
+
   }
 
   &__wrapper {
-    // width: 320px;
-    // box-sizing: border-box;
-    width: 100%;
+    box-sizing: border-box;
     min-height: 650px;
-    margin-left: -5.17%;;
-    margin-right: -5.17%;;
+    margin-left: -5.17%;
+    margin-right: -5.17%;
     margin-top: -144px;
 
     padding: 0 5.17%;
+    padding-top: 183px;
 
     background-color: $companion1-bg-color;
     color: $companion1-text-color;
 
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-content: flex-start;
 
     background-image: url("../img/substrate-1-mobile.jpg");
     background-position: 0 0;
@@ -35,45 +35,40 @@
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
         background-image: url("../img/substrate-1-mobile@2x.jpg");
-        background-size: cover;
     }
   }
 
   &__title {
-    // width: 290px;
     width: 100%;
 
     padding: 0;
-    padding-top: 182px;
     margin: 0;
     margin-bottom: 25px;
 
-    font-size: 21px;
-    line-height: 21px;
+    font-size: 1.31rem;
+    line-height: 1.31rem;
     font-weight: 700;
   }
 
   &__text {
-    // width: 290px;
     width: 100%;
-    // max-width: 350px;
 
     padding: 0;
     margin: 0;
-    // margin-left: 15px;
-    margin-bottom: 37px;
+    margin-bottom: 38px;
 
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.88rem;
+    line-height: 1.5rem;
     font-weight: 400;
   }
 
   &__slogan {
-    // width: 218px;
-    width: 100%;
+    width: 75%;
+    padding: 0;
     margin: 0;
-    // margin-left: 15px;
-    margin-bottom: 47px;
+    margin-bottom: 37px;
+
+    font-weight: 100;
   }
 
   &__price {
@@ -83,9 +78,8 @@
     margin: 0;
     margin-bottom: 20px;
 
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 100;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
   }
 
   &__slogan-text {
@@ -96,10 +90,8 @@
     margin: 0;
     margin-bottom: 8px;
 
-    font-size: 22px;
-    line-height: 22px;
-    font-weight: 100;
-
+    font-size: 1.38rem;
+    line-height: 1.38rem;
 
     border-bottom: 1px solid $base-bg-color;
   }
@@ -123,7 +115,6 @@
     }
 
     &__wrapper {
-      // width: 719px;
       width: 100%;
       min-height: 376px;
       margin: 0;
@@ -131,12 +122,12 @@
       padding:0;
 
       background-image: url("../img/substrate-1-tablet.jpg");
-
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
           background-image: url("../img/substrate-1-tablet@2x.jpg");
-          // background-size: 719px auto;
+          background-size: 719px cover;
       }
     }
 
@@ -146,7 +137,7 @@
 
       padding-top: 48px;
       margin-left: 383px;
-      margin-bottom: 0px;
+      // margin-bottom: 0px;
     }
 
     &__text {
@@ -154,7 +145,7 @@
       width: 50%;
 
       margin-left: 383px;
-      margin-bottom: 32px;
+      margin-bottom: 50px;
     }
 
     &__slogan {
@@ -186,9 +177,9 @@
 
     }
 
-    // &__button {
-    //   margin-left: 0;
-    // }
+    &__button {
+      margin: 0;
+    }
 
   }
 }

@@ -2,14 +2,12 @@
 
 .about-flight {
   box-sizing: border-box;
-  // width: 320px;
-  width: 100%;
-
+  // width: 100%;
 
   padding-top: 45px;
 
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5.17%;
+  padding-right: 5.17%;
 
   background-color: $companion1-bg-color;
   color: $companion1-text-color;
@@ -21,8 +19,8 @@
 
   @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
-      background-image: url("../img/substrate-4-mobile@2x.jpg");
-      background-size: 320px cover;
+    background-image: url("../img/substrate-4-mobile@2x.jpg");
+    background-size: 765px cover;
   }
 
   &__title {
@@ -30,10 +28,11 @@
     margin: 0;
     margin-bottom: 25px;
 
-    width: 290px;
+    // width: 290px;
+    width: 100%;
 
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 1.88rem;
+    line-height: 2.75rem;
     font-weight: bold;
   }
 
@@ -46,8 +45,8 @@
     margin: 0;
     margin-bottom: 23px;
 
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.88rem;
+    line-height: 1.5rem;
     font-weight: 300;
 
     &:last-child {
@@ -64,15 +63,14 @@
 
 @media (min-width: 765px) {
   .about-flight {
-    width: 765px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     padding-top: 75px;
 
-    padding-left: 23px;
-    padding-right: 23px;
+    padding-left: 3.2%;
+    padding-right: 3.2%;
 
     background-image: url("../img/substrate-4-tablet.jpg");
 
@@ -87,30 +85,30 @@
 
       margin-bottom: 61px;
 
-      width: 719px;
+      width: 100%;
 
-      font-size: 46px;
-      line-height: 55px;
+      font-size: 2.88rem;
+      line-height: 3.44rem;
       font-weight: bold;
     }
 
     &__wrapper {
-      width: 345px;
+      width: 47.98%;
       order: 1;
     }
 
     &__text {
-      width: 345px;
+      width: 100%;
       margin-bottom: 15px;
     }
 
     &__paragraph {
-      width: 283px;
+      width: 82.03%;
 
       margin-bottom: 23px;
 
       &:first-child {
-        width: 345px;
+        width: 100%;
       }
 
       &:last-child {
@@ -128,11 +126,10 @@
 
 @media (min-width: 1600px) {
   .about-flight {
-    width: 1600px;
 
     padding-top: 120px;
-    padding-left: 230px;
-    padding-right: 230px;
+    padding-left: 20.18%;
+    padding-right: 20.18%;
 
     background-image: url("../img/substrate-4-desktop.jpg");
 
@@ -146,26 +143,27 @@
     &__title {
       margin-bottom: 65px;
 
-      width: 1140px;
+      width: 100%;
 
-      font-size: 54px;
-      line-height: 60px;
+      font-size: 3.38rem;
+      line-height: 3.75rem;
     }
 
     &__wrapper {
-      width: 682px;
+      // width: 682px;
+      width: 59.83%;
     }
 
     &__text {
-      width: 682px;
+      width: 100%;
       margin-bottom: 15px;
     }
 
     &__paragraph {
-      width: 682px;
+      width: 100%;
 
       &:first-child {
-        width: 682px;
+        width: 100%;
       }
     }
   }

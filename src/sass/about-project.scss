@@ -1,7 +1,7 @@
 @import "_style-lib.scss";
 
 .about-project{
-  padding-top: 26px;
+  padding-top: 13px;
   padding-bottom: 7px;
 
   &__title {
@@ -66,7 +66,6 @@
 
   &__photo {
     position: relative;
-// padding-left: 42px;
     padding-top: 33px;
 
     width: 165px;
@@ -79,7 +78,6 @@
 @media (min-width: 765px) {
   .about-project{
     position: relative;
-    // width: 719px;
     display: flex;
 
     flex-wrap: wrap;
@@ -94,9 +92,9 @@
     }
 
     &__text {
-      // margin-bottom: 68px;
-      margin-bottom: 9.46%;
+      margin-bottom: -13.5%;
       align-self: flex-start;
+      align-content: flex-start;
 
       &:last-child {
         margin-bottom: 0px;
@@ -104,12 +102,32 @@
     }
 
     &__quote {
-      // width: 478px;
       width: 66.48%;
-      max-width: 600px;
-      // margin-top: -68px;
-      margin-top: -9.46%;
+      margin-top: -13.5%;
       margin-bottom: 25px;
+    }
+
+    &__photo-wrapper {
+      position: relative;
+      width: 27.82%;
+
+      margin: 0;
+      margin-left: auto;
+      margin-bottom: 30px;
+
+      &::before {
+        width:82.5%;
+        height: 86%;
+        max-width: 235px;
+        max-height: 270px;
+      }
+    }
+
+    &__photo {
+      width:82.5%;
+      height: auto;
+      max-width: 235px;
+      max-height: 270px;
 
     }
   }

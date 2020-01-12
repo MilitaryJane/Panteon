@@ -97,8 +97,8 @@
     position: absolute;
     max-width: 139px;
 
-    left: 44.14%;
-    top: 80.34%;
+    left: 43%;
+    top: 94%;
 
     font-size: 0.75rem;
     line-height: 1.06rem;
@@ -107,11 +107,15 @@
   }
 
   &__video-content {
+    position: absolute;
     display: none;
     margin-bottom: 30px;
 
     width: 100%;
-    height: auto;
+    height: 100%;
+
+    top: 0;
+    left: 0;
 
     &--open {
       display: block;
@@ -130,18 +134,16 @@
 
 @media (min-width: 765px) {
   .video {
-    width: 67.32%;
+    width: 71.63%;
     padding-bottom: 36%;
 
-    &--open {
-      margin-bottom: 60px;
-    }
 
     &--features {
       width: 100%;
 
       padding-bottom: 56.25%;
       margin: 0 auto;
+      margin-bottom: 13px;
     }
 
     &__play-button {
@@ -150,7 +152,7 @@
       top: 50%;
       margin-top: -26px;
       left: 50%;
-      margin-left: -115px;
+      margin-left: -100px;
 
       padding-left: 52px;
 
@@ -184,8 +186,8 @@
     }
 
     &__slogan {
-      left: 70.26%;
-      top: 80.09%;
+      left: 70%;
+      top: 87.5%;
 
       font-weight: 400;
     }

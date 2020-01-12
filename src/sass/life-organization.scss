@@ -2,17 +2,15 @@
 
 .life-organization {
   padding-top: 50px;
-  padding-bottom: 67px;
+  padding-bottom: 71px;
 
   &__title {
-    // width: 290px;
-
     padding: 0;
     margin: 0;
     margin-bottom: 32px;
 
-    font-size: 30px;
-    line-height: 43px;
+    font-size: 1.88rem;
+    line-height: 2.69rem;
     font-weight: 700;
 
     color: $companion2-text-color;
@@ -23,11 +21,10 @@
     display: flex;
     flex-direction: column;
 
-    // width: 290px;
     width: 100%;
     padding: 0;
-    // padding-left: 24px;
-    padding-left: 8.28%;
+
+    padding-left: 24px;
     margin: 0;
 
     list-style: none;
@@ -67,7 +64,7 @@
     margin: 0;
     margin-bottom: 10px;
 
-    width: 267px;
+    width: 92%;
 
     &:last-child {
       margin-bottom: 0;
@@ -77,7 +74,7 @@
   &__item-button {
     position: relative;
     display: block;
-    width: 65px;
+
     width: 72.22%;
     min-height: 45px;
 
@@ -90,6 +87,7 @@
     background-color: transparent;
 
     cursor: pointer;
+
 
     &::before {
       @include pseudo-element;
@@ -128,6 +126,8 @@
     &--residence::after {
       width: 30px;
       height: 23px;
+
+      top: 0;
 
       background-image: url("../img/icon-1.svg");
     }
@@ -174,34 +174,37 @@
   }
 
   &__item-image {
-    width: 262px;
-    height: 125px;
+    // width: 262px;
+    // height: 125px;
 
-    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 27px;
   }
 
   &__item-title {
     display: block;
-    width: 267px;
+    width: 100%;
 
     padding: 0;
     margin: 0;
     margin-bottom: 15px;
 
-    font-size: 21px;
-    line-height: 22px;
+    font-size: 1.31rem;
+    line-height: 1.38rem;
     font-weight: 700;
   }
 
   &__item-text {
-    width: 267px;
+    width: 100%;
 
     padding: 0;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.88rem;
+    line-height: 1.5rem;
     font-weight: 300;
   }
 
@@ -212,8 +215,9 @@
   //Поведение открытого слайда
 
   &__item--open &__item-button {
-    width: 290px;
+    width: 100%;
     padding-left: 75px;
+
 
     &::before {
       background-color: $companion4-bg-color;
@@ -230,12 +234,16 @@
       padding: 0;
       margin: 0;
 
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 1.13rem;
+      line-height: 1.5rem;
       font-weight: 700;
 
       color: $companion2-text-color;
       text-align: left;
+  }
+
+  &__item--open &__item-button--residence &__item-name {
+    margin-top: -23px;
   }
 
   &__item--open &__item-wrapper {
@@ -248,21 +256,21 @@
 @media (min-width: 765px) {
   .life-organization {
     padding-top: 60px;
-    padding-bottom: 18px;
+    padding-bottom: 33px;
 
     &__title {
-      width: 719px;
+      width: 100%;
 
       margin-bottom: 40px;
 
-      font-size: 42px;
-      line-height: 42px;
+      font-size: 2.63rem;
+      line-height: 2.63rem;
     }
 
     &__list {
       flex-direction: row;
 
-      width: 719px;
+      width: 100%;
 
       padding-top: 10px;
       padding-left: 0px;
@@ -272,7 +280,7 @@
         top: 18px;
         left: 15px;
 
-        width: 651px;
+        width: 90.54%;
         height: 3px;
       }
     }
@@ -286,31 +294,50 @@
     }
 
     &__list--no-js &__item-wrapper {
-      width: 719px;
+      width: 100%;
+      box-sizing: border-box;
       position: relative;
+      padding-left: 20px;
+
+      background: chartreuse;
 
       &::before {
         @include pseudo-element;
 
         top: -97px;
-        left: 16px;
+        left: 20px;
 
-        width: 703px;
+        width: 97.78%;
         height: 3px;
 
         background-color: $companion4-bg-color;
       }
     }
 
+    &__list--no-js &__item--open &__item-wrapper {
+      padding-left: 0;
+      width: 100%;
+
+      &::before {
+        left: 0;
+
+        width: 90.54%;
+      }
+
+
+    }
+
     &__item {
       padding-top: 35px;
       margin-bottom: 0;
-      margin-right: 70px;
+      margin-right: 63px;
       margin-left: -20px;
 
-      &:first-child {
-        margin-right: 50px;
-      }
+      // background-color: coral;
+
+      // &:first-child {
+      //   margin-right: 150px;
+      // }
 
       &:last-child {
         margin-right: 0;
@@ -318,11 +345,15 @@
     }
 
     &__item-button {
-      width: 60px;
+      // width: 50%;
       min-height: 63px;
       margin-left: 0px;
       margin-top: -33px;
       margin-bottom: 40px;
+
+      &:hover {
+        background: darkblue;
+      }
 
       &::before {
         top: 0px;
@@ -344,30 +375,31 @@
 
       &--leisure::after {
         top: 38px;
+
       }
     }
 
     &__item-image {
-      width: 719px;
-      height: 334px;
+      width: 100%;
+      height: auto;
 
       margin-bottom: 33px;
     }
 
     &__item-text {
-      width: 719px;
+      width: 100%;
     }
 
     &__item--open {
-      width: 240px;
+      width: 310px;
       margin-right: 30px;
     }
 
     &__item--open &__item-button{
       box-sizing: border-box;
-      width: 240px;
-      padding-left: 55px;
-      padding-top: 25px;
+      // width: 240px;
+      padding-left: 65px;
+      padding-top: 40px;
 
       &::before {
         top: 0;

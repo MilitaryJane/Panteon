@@ -2,9 +2,8 @@
 
 .info {
   box-sizing: border-box;
-  // width: 320px;
 
-  padding: 35px 5.17%;
+  padding: 35px 5.17% 13px 5.17%;
 
   background-color: $companion7-bg-color;
 
@@ -16,6 +15,7 @@
 
   &__list {
     width: 100%;
+
     padding: 0;
 
     border-spacing: 0;
@@ -32,8 +32,8 @@
       padding-top: 4px;
       padding-bottom: 10px;
 
-      font-size: 34px;
-      line-height: 34px;
+      font-size: 2.13rem;
+      line-height: 2.13rem;
       font-weight: 600;
 
       color: $companion2-text-color;
@@ -61,8 +61,8 @@
     &--field {
       padding: 0;
 
-      font-size: 11px;
-      line-height: 18px;
+      font-size: 0.69rem;
+      line-height: 1.13rem;
       font-weight: 400;
 
     }
@@ -71,6 +71,7 @@
   &__subitem {
     box-sizing: border-box;
     width: 153px;
+
     padding-left: 15px;
     padding-right: 20px;
 
@@ -88,19 +89,15 @@
 
 @media (min-width: 765px) {
   .info {
-    // width: 765px;
     padding: 40px 3.2%;
-    // padding-left: 5.17%;
-    // padding-right: 5.17%;
-
 
     &__item {
 
       &--value {
         padding-bottom: 10px;
 
-        font-size: 46px;
-        line-height: 46px;
+        font-size: 2.88rem;
+        line-height: 2.88rem;
         font-weight: 700;
       }
     }
@@ -121,8 +118,13 @@
 
 @media (min-width: 1600px) {
   .info {
-    // width: 1600px;
     padding: 43px 20.18%;
+
+
+    &__list {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
 
     &__subitem {
       width: 215px;

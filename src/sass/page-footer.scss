@@ -2,7 +2,6 @@
 
 .page-footer {
   box-sizing: border-box;
-  width: 320px;
 
   padding: 55px 0 35px 0;
 
@@ -21,7 +20,11 @@
   }
 
   &__wrapper {
-    margin-left: 54px;
+    width: 62.76%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__social {
@@ -29,15 +32,19 @@
   }
 
   &__link {
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 40px;
+  }
+
+  &__logo {
+    margin: 0 auto;
   }
 }
 
 
 @media (min-width: 765px) {
   .page-footer {
-    width: 765px;
+    width: 100%;
     padding: 95px 0 10px 0;
 
     background-image: url("../img/substrate-5-tablet.jpg");
@@ -45,22 +52,29 @@
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
         background-image: url("../img/substrate-5-tablet@2x.jpg");
-        background-size: 765px;
+        background-size: 765px cover;
     }
 
     &__wrapper {
       display: flex;
       justify-content: space-between;
+
+      width: 100%;
+      margin: 0;
     }
 
     &__social {
-      margin-bottom: 0px;
+      margin: 0;
       order: 2;
     }
 
     &__link {
-      margin-bottom: 0;
+      margin: 0;
       order: 1;
+    }
+
+    &__logo {
+      margin: 0;
     }
   }
 }

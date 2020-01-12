@@ -2,8 +2,8 @@
 
 .page-header {
     width: 100%;
-    min-height: 579px;
     height: auto;
+    min-height: 579px;
 
     background-color: $companion1-bg-color;
     color: $companion1-text-color;
@@ -17,7 +17,6 @@
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
         background-image: url("../img/head-img-mobile@2x.jpg");
-        background-size: cover;
     }
 }
 

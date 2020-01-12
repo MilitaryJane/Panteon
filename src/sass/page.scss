@@ -7,10 +7,8 @@
     margin: 0 auto;
 
     font-family: "Montserrat", sans-serif;
-    // font-size: 16px;
-    font-size: 100%;
-    // line-height: 24px;
-    line-height: 100%;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 300;
     color: $base-text-color;
 
@@ -18,20 +16,23 @@
 
 
     // background-image: url('../img/Panteon\ 320.jpg');
-    // background-position: 0 0;
-    // background-repeat: no-repeat;
-    // opacity: 0.6;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 0.6;
 }
 
 a {
     text-decoration: none;
 }
 
-// @media (min-width: 765px) {
-//     .page {
-//         width: 765px;
-//     }
-// }
+@media (min-width: 765px) {
+    .page {
+    //     // width: 765px;
+    // //     font-size: 16px;
+    // //     line-height: 24px;
+    background-image: url('../img/Panteon\ 750.jpg');
+    }
+}
 
 
 // @media (min-width: 1600px) {

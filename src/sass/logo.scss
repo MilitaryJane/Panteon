@@ -31,19 +31,9 @@
     color: $companion1-text-color;
   }
 
-  // &__name-text {
-  //   font-size: 16.8px;
-  //   // font-size: 100%;
-  //   line-height: 13px;
-  //   // line-height: 81.25%;
-  //   font-weight: 600;
-  // }
-
   &__text {
     font-size: 12.6px;
-    // font-size: 78.75%;
     line-height: 13px;
-    // line-height: 81.25%;
     font-weight: 100;
   }
 
@@ -94,7 +84,7 @@
 
 @media (min-width: 765px) {
   .logo {
-    width: 195px;
+    width: 183px;
     height: 48px;
 
     &__image {
@@ -104,7 +94,7 @@
 
     &__text-wrapper {
       width: 125px;
-      padding-top: 4px;
+      padding-top: 8px;
     }
 
     &__name-text,
@@ -114,10 +104,7 @@
 
     &__name-text {
       font-size: 21px;
-      // font-size: 131.25%;
       line-height: 16px;
-      // line-height: 100%;
-
     }
 
     &--footer {

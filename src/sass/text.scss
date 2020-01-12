@@ -1,12 +1,11 @@
 @import "_style-lib.scss";
 
 .text {
-  // width: 290px;
   width: 100%;
   padding: 0;
 
-  font-size: 12.5px;
-  line-height: 24px;
+  font-size: 0.78rem;
+  line-height: 1.5rem;
   font-weight: 300;
   color: $companion4-text-color;
 
@@ -21,15 +20,13 @@
   }
 
   &--about-project {
-    font-size: 14px;
+    font-size: 0.88rem;
   }
 }
 
 
 @media (min-width: 765px) {
   .text {
-    // width: 350px;
-
     &__paragraph {
       margin-bottom: 12px;
 
@@ -39,13 +36,12 @@
     }
 
     &--about-project {
-      // width: 478px;
-      width: 66.48%;
-      max-width: 600px;
+
+      width: 70%;
+      max-width: 550px;
     }
 
     &--about-project-big {
-      // width: 719px;
       width: 100%;
       max-width: 100%;
     }
@@ -56,7 +52,6 @@
 
 @media (min-width: 1600px) {
   .text {
-    // width: 463px;
     width: 100%;
 
 
@@ -69,13 +64,11 @@
     }
 
     &--about-project {
-      // width: 720px;
       width: 63.16%;
       max-width: none;
     }
 
     &--about-project-big {
-      // width: 720px;
       width: 63.16%;
     }
   }

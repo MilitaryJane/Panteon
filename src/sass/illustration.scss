@@ -4,15 +4,15 @@
   width: 320px;
   height: 160px;
 
-  margin-left: -15px;
   padding-top: 19px;
   padding-bottom: 52px;
 
   &__wrapper {
     position: relative;
-
     width: 320px;
     height: 160px;
+    margin-left: -15px;
+
 
     background-image: url("../img/illustration.svg");
     background-position: 73% 94%;
@@ -118,13 +118,15 @@
     width: 765px;
     height: 300px;
 
-    margin-left: -23px;
-    padding-top: 0px;
-    padding-bottom: 95px;
+    padding-top: 0;
+    padding-bottom: 0;
 
     &__wrapper {
       width: 765px;
       height: 300px;
+
+      margin-top: -110px;
+      margin-left: -23px;
 
       background-position: 75% 100%;
       z-index: 1;
@@ -190,13 +192,13 @@
     width: 1600px;
     height: 465px;
 
-    margin-left: -230px;
-
     padding-bottom: 95px;
 
     &__wrapper {
       width: 1600px;
       height: 465px;
+
+      margin-left: -230px;
 
       &::after {
         top: 350px;
