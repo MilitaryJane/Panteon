@@ -149,13 +149,13 @@
     .about-Mars__text {
       margin-bottom: 0px; } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1800px) {
   .about-Mars {
     padding-top: 88px; }
     .about-Mars__column {
       width: 40.61%; }
     .about-Mars__illustration {
-      margin-top: -30.88%; } }
+      margin-top: -15.88%; } }
 
 .about-project {
   padding-top: 13px;
@@ -879,12 +879,11 @@
 @media (min-width: 1600px) {
   .illustration {
     width: 1600px;
-    height: 465px;
-    padding-top: 250px; }
+    height: 465px; }
     .illustration__wrapper {
       width: 1600px;
       height: 465px;
-      margin-left: -230px; }
+      margin-left: -115px; }
       .illustration__wrapper::after {
         top: 350px;
         left: 1053px; }
@@ -1609,12 +1608,12 @@ img {
 
 @media (min-width: 1600px) {
   .page-footer {
+    width: 100%;
     padding: 115px 0 10px 0;
     background-image: url("../img/substrate-5-desktop.jpg"); } }
   @media (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1600px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1600px) and (min-resolution: 144dpi), (min-width: 1600px) and (min-resolution: 1.5dppx) {
     .page-footer {
-      background-image: url("../img/substrate-5-desktop@2x.jpg");
-      background-size: 1600px; } }
+      background-image: url("../img/substrate-5-desktop@2x.jpg"); } }
 
 .page-header {
   width: 100%;
