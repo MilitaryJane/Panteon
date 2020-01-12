@@ -82,7 +82,7 @@
 
 @media (min-width: 1600px) {
   .page-footer {
-    // width: 1600px;
+    width: 100%;
     padding: 115px 0 10px 0;
 
     background-image: url("../img/substrate-5-desktop.jpg");
@@ -90,7 +90,6 @@
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
         background-image: url("../img/substrate-5-desktop@2x.jpg");
-        background-size: 1600px;
     }
   }
 }

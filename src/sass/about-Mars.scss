@@ -52,7 +52,7 @@
 }
 
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1800px) {
   .about-Mars{
     padding-top: 88px;
 
@@ -61,7 +61,8 @@
     }
 
     &__illustration  {
-      margin-top: -30.88%;
+
+      margin-top: -15.88%;
     }
   }
 }
