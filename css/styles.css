@@ -1609,7 +1609,6 @@ img {
 
 @media (min-width: 1600px) {
   .page-footer {
-    width: 1600px;
     padding: 115px 0 10px 0;
     background-image: url("../img/substrate-5-desktop.jpg"); } }
   @media (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1600px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1600px) and (min-resolution: 144dpi), (min-width: 1600px) and (min-resolution: 1.5dppx) {
@@ -1726,17 +1725,15 @@ img {
   line-height: 24px;
   font-weight: 300;
   color: #4c4c4c;
-  background-color: #ffffff;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  opacity: 0.6; }
+  background-color: #ffffff; }
 
 a {
   text-decoration: none; }
 
 @media (min-width: 765px) {
   .page {
-    background-image: url("../img/Panteon 750.jpg"); } }
+    font-size: 16px;
+    line-height: 24px; } }
 
 .promo {
   -webkit-box-sizing: border-box;
