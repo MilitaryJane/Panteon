@@ -57,7 +57,7 @@
           <span class = "promo__decor-text1">Пантеон</span>
           <span class = "promo__decor-text2">Олимп</span>
 
-          <div class="promo__video video">
+          <div class="promo__video video video--no-js">
             <div class = "video__image-wrapper">
               <picture>
                   <source type="image/webp" media="(min-width: 1600px)"
@@ -74,14 +74,10 @@
                       srcset="img/video-1-mobile@2x.png 2x" alt="Марсианские кратеры">
               </picture>
               <button class="video__play-button" aria-label="Воспроизвести"><span class="video__play-button-text">Смотреть видео</span></button>
+              <div class = "video__slogan">Первый город на&nbsp;планете Марс недалеко от горы Олимп</div>
             </div>
-            <div class="video__video-content">
-              <iframe src="https://#;controls=1" width="214" height="139"></iframe>
-            </div>
+            <video class="video__video-content" src="video/Clouds.mp4" width="214" height="139" controls></video>
           </div>
-
-          <div class = "promo__slogan">Первый город на&nbsp;планете Марс недалеко от горы Олимп</div>
-
           <a class = "promo__link" href = "#page-main"><span class = "visually-hidden">Узнать больше о проекте</span></a>
         </section>
     </div>
@@ -209,7 +205,7 @@
           <h2 class = "flight-cost__title">Стоимость перелета</h2>
           <div class  = "flight-cost__text">
             Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов.
-            Маск стремится сократить эту цифру в 20 000 раз, что составит <b>500 000 долларов</b> на человека.
+            Маск&nbsp;стремится сократить эту цифру в 20 000 раз, что составит <b>500 000 долларов</b> на человека.
           </div>
           <div class = "flight-cost__slogan">
             <span class = "flight-cost__price">$500 k</span>
@@ -221,7 +217,7 @@
       </section>
       <section class = "page-main__features features">
         <h2 class = "features__title">Подводные камни в&nbsp;масштабах космоса</h2>
-        <div class = "features__video video video--features">
+        <div class = "features__video video video--features video--no-js">
           <div class = "video__image-wrapper video__image-wrapper--features">
             <picture>
                 <source type="image/webp" media="(min-width: 1600px)"
@@ -239,9 +235,8 @@
             </picture>
             <button class="video__play-button video__play-button--features" aria-label="Воспроизвести"></button>
           </div>
-          <div class="video__video-content video__video-content--features">
-            <iframe src="https://#;controls=1" width="291" height="172"></iframe>
-          </div>
+            <!-- <video class="video__video-content" src="video/video1.mp4" width="291" height="172" controls></video> -->
+            <iframe class="video__video-content" src="https://www.youtube.com/embed/2BOwSOU150g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  controls></iframe>
         </div>
 
         <ul class = "features__list features__list--no-js">
@@ -271,7 +266,7 @@
                   Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
                 </p>
 
-                <p class = "features__paragraph">
+                <!-- <p class = "features__paragraph">
                   Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов,
                   а минимальная температура опускается до -140 градусов по Цельсию.
                   Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких&nbsp;часов до нескольких месяцев.
@@ -300,7 +295,7 @@
                   На планете отсутствует магнитное поле,&nbsp;поэтому радиационный фон повышен.
                   А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным.
                   Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
-                </p>
+                </p> -->
             </div>
           </li>
           <li class = "features__item">
@@ -580,7 +575,7 @@
               <input class = "form__input" id = "user-name" type = "text" name = "user-name" placeholder="Имя" required>
               <label class = "visually-hidden" for = "user-email">E-mail</label>
               <input class = "form__input" id = "user-email" type = "email" name = "user-email" placeholder="E-mail" required>
-              <button class = "form-button button button--form">Подписаться</button>
+              <button class = "form__button button button--form">Подписаться</button>
             </fieldset>
           </form>
         </section>
@@ -645,10 +640,11 @@
   <script src="js/svg4everybody.min.js"></script>
   <script src="js/svg4everybody.legacy.min.js"></script>
   <script>
-      svg4everybody()
+      svg4everybody();
   </script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/main.min.js"></script>
+  <!-- <script src="js/video_controls.js"></script> -->
 
 </body>
 </html>
